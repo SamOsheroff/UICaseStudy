@@ -15,32 +15,79 @@
     </head>
     <body>
         <!-- Creates the title of the page which indicates that you are registering for an account -->
-        <div class= "container">
-             <h1> Register </h1>
-                 <p> Membership is free, and we won't share any of your information with third parties.</p>
+       <div class= "container-fluid">
+            <div class= "row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <h1> Register </h1>
+                    <p> Membership is free, and we won't share any of your information with third parties.</p>
         <!-- Creates the registraion form -->
-            <form id = "registrationForm">
-                Username: <input class = "registrationInput" name = "username" type = "text" required>
-                <br>
-                Password: <input class = "registrationInput" name = "password" type = "text"
-                required>
-                <h3 class = "registrationPersonalInfo"> Personal Information </h3>
-                    First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" required>
-                    Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" type = "text" required> 
-                    Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" required> 
+                    <form id = "registrationForm">
+                    Username: <input class = "registrationInput" name = "username" type = "text" required>
                     <br>
-                    Select a profile picture: <input class = "registrationInput" form = "registrationForm" name = "myFile" type = "file">
-                    Address: <input class = "registrationInput" form = "registrationForm" name= "address" type = "text" required> 
-                    <br>
-                    Date of Birth: <input class = "registrationInput" form = "registrationForm" name="DOB" type = "date" required> 
-                    <br>
-                    Phone Number: <input class = "registrationInput" form = "registrationForm" name ="DOB" type = "text">
-                    <br>
-                    I have read accept the terms of use. <input type = "checkbox" form = "registrationForm" required> 
-                    <br> 
-                    <button type = "submit" id = "save" onclick = "saveForm()" form = "registrationForm">Save</button>
-                    <button type = "reset" id = "delete" form = "registrationForm">Delete</button>
-            </form>
-    </div>
+                    Password: <input class = "registrationInput" name = "password" type = "text"
+                    required>
+                    <h3 class = "registrationPersonalInfo"> Personal Information </h3>
+                        First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" required>
+                        <br>
+                        Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" type = "text" required> 
+                        <br>
+                        Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" required> 
+                        <br>
+                        Select a profile picture: <input class = "registrationInput" form = "registrationForm" name = "myFile" type = "file">
+                        Address: <input class = "registrationInput" form = "registrationForm" name= "address" type = "text" required> 
+                        <br>
+                        Date of Birth: <input class = "registrationInput" form = "registrationForm" name="DOB" type = "date" required> 
+                        <br>
+                        Phone Number: <input class = "registrationInput" form = "registrationForm" name ="DOB" type = "text">
+                        <br>
+                        I have read accept the terms of use. <input type = "checkbox" form = "registrationForm" required> 
+                        <br> 
+                        <input type="submit" class="btn btn-info" value="Save" onclick = "saveForm()">
+<!--                        <button type = "submit" id = "save" onclick = "saveForm()" form = "registrationForm">Save</button>-->
+                        <button type="button" class="btn btn-danger" button >Delete</button>
+<!--                        <button type = "reset" id = "delete" form = "registrationForm">Delete</button>-->
+                        <p class = "text-muted"> Already have an account? <a href = "LogIn.html"> Sign In </a></p>
+                    </form>
+            </div>
+            <div class="col-sm-4"></div>
+            </div>
+        </div>   
     </body>
+    <script> 
+        var today = new Date(); 
+        var expiry = new Date(today.getTime() +30 * 24 * 3600 * 1000);
+        function setCookie(name,value){
+            document.cookie = name + "=" + escape(value) + "; path =/; expires=" + expiry.toGMTString();
+        }
+        
+        function getCookie(cname){
+            var name = cnmae + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i =0; i<ca.length; i++){
+                var c = ca[i];
+                while (c.charAt(0) == ' '){
+                    c = c.substring(1); 
+                }
+                if (c.indexOf(name)== 0){
+                    return c.substring(name.length, c.length); 
+                    
+                }
+                }
+            return "";
+            }
+        
+        function saveForm() { 
+            var form = document.getElementById('registrationForm');
+            if (getCookie(form.username.value) == "") {
+                setCookie(form.username.value, JSON.stringify({password:form.password.value, firstName:form.firstName.value,lastName:form.lastName.value,email:form.email.value, address:form.address.value,DOB:form.DOB.value,phoneNumber:form.phoneNumber.value}));
+                return true;
+            }
+            else{
+                alert("Username already exists");
+            }
+        }
+    
+    </script>
 </html>
