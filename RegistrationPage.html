@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>BeeHive</title>
+        <!-- <link rel = "stylesheet" href = "Exercise1.css"> -->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    </head>
+    <body>
+        <!-- Creates the title of the page which indicates that you are registering for an account -->
+        <div class= "container">
+             <h1> Register </h1>
+                 <p> Membership is free, and we won't share any of your information with third parties.</p>
+        <!-- Creates the registraion form -->
+            <form id = "registrationForm">
+                Username: <input class = "registrationInput" name = "username" type = "text" required>
+                <br>
+                Password: <input class = "registrationInput" name = "password" type = "text"
+                required>
+                <h3 class = "registrationPersonalInfo"> Personal Information </h3>
+                    First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" required>
+                    Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" type = "text" required> 
+                    Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" required> 
+                    <br>
+                    Select a profile picture: <input class = "registrationInput" form = "registrationForm" name = "myFile" type = "file">
+                    Address: <input class = "registrationInput" form = "registrationForm" name= "address" type = "text" required> 
+                    <br>
+                    Date of Birth: <input class = "registrationInput" form = "registrationForm" name="DOB" type = "date" required> 
+                    <br>
+                    Phone Number: <input class = "registrationInput" form = "registrationForm" name ="DOB" type = "text">
+                    <br>
+                    I have read accept the terms of use. <input type = "checkbox" form = "registrationForm" required> 
+                    <br> 
+                    <button type = "submit" id = "save" onclick = "saveForm()" form = "registrationForm">Save</button>
+                    <button type = "reset" id = "delete" form = "registrationForm">Delete</button>
+            </form>
+    </div>
+    </body>
+</html>
