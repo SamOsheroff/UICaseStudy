@@ -1,0 +1,23 @@
+#beeHiveLogo{
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand{
+    font-size: 50px;
+}
+.navbar-nav{
+    padding: 10px;
+}
+.navbar-header{
+    padding: 10px;
+}
+.navbar{
+    background-color: #82A18F;
+}
+.navbar-brand{
+    color: white;
+    padding-right: 3px;
+}
+.headerIcons{
+    color: white;
+}
