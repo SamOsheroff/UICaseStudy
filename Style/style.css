@@ -10,7 +10,7 @@
     font-size: 50px;
 }
 .navbar-brand:hover{
-    color: white;
+    color: #FFF7E5;
 }
 .navbar-nav{
     padding: 10px;
@@ -20,6 +20,10 @@
     font-size: 18px;
     text-shadow: 2px 2px 4px black;
 
+}
+.navOptions:hover{
+    background-color: #FFF7E5;
+    color: black;
 }
 .navbar-header{
     padding: 10px;
@@ -36,7 +40,12 @@
     color: white;
     font-size: 18px;
     text-shadow: 2px 2px 4px black;
+    
 
+}
+.headerIcons:hover{
+    background-color: #FFF7E5;
+    color:black;
 }
 #searchContainer{
     background-image: url(../Images/homeBackground2.jpg);
@@ -119,6 +128,11 @@
     text-align: center;
     text-shadow: 2px 2px 4px black;
     font-size: 16px;
+
+}
+.footerListItems:hover{
+    background-color: #FFF7E5;
+    color: black;
 
 }
 li{
