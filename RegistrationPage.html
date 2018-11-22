@@ -16,9 +16,9 @@
     <body>
         <!-- Creates the title of the page which indicates that you are registering for an account -->
        <div class= "container-fluid">
-            <div class= "row">
+            <div class= "row" id = "container">
                 <div class="col-sm-4"></div>
-                <div class="col-sm-4">
+                <div class = "col-sm-4" id = "column">
                     <h1> Register </h1>
                     <p> Membership is free, and we won't share any of your information with third parties.</p>
         <!-- Creates the registraion form -->
@@ -29,7 +29,6 @@
                     required>
                     <h3 class = "registrationPersonalInfo"> Personal Information </h3>
                         First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" required>
-                        <br>
                         Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" type = "text" required> 
                         <br>
                         Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" required> 
@@ -45,7 +44,7 @@
                         <br> 
                         <input type="submit" class="btn btn-info" value="Save" onclick = "saveForm()">
 <!--                        <button type = "submit" id = "save" onclick = "saveForm()" form = "registrationForm">Save</button>-->
-                        <button type="button" class="btn btn-danger" button >Delete</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
 <!--                        <button type = "reset" id = "delete" form = "registrationForm">Delete</button>-->
                         <p class = "text-muted"> Already have an account? <a href = "LogIn.html"> Sign In </a></p>
                     </form>
