@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+#beeHiveLogoText{
+    text-shadow: 2px 2px 4px black;
+
+}
 .navbar-brand{
     font-size: 50px;
 }
@@ -13,6 +17,9 @@
 }
 .navOptions{
     color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px black;
+
 }
 .navbar-header{
     padding: 10px;
@@ -27,6 +34,9 @@
 }
 .headerIcons{
     color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px black;
+
 }
 #searchContainer{
     background-image: url(../Images/homeBackground2.jpg);
@@ -41,13 +51,52 @@
     margin: 0;
     padding: 0;
 }
+#homeSearch{
+    box-shadow: 2px 2px 4px black;
+}
+#homeSearchSubmitButton{
+    box-shadow: 2px 2px 4px black;
+}
+
 #homeSearchForm{
-    margin: 100px auto;
+    margin: 150px auto 0;
     padding: 10px;
     width: 50%;
+    
 }
-#checkIn{
+#checkInCheckOut{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+.homeInputLabels{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+#checkInInput{
 /*    margin-top: 20px;*/
+    box-shadow: 2px 2px 4px black;
+}
+#checkOutInput{
+    box-shadow: 2px 2px 4px black;
+}
+#guestsHomeInput{
+    box-shadow: 2px 2px 4px black;
+
+}
+#homeSubmitButton{
+    background-color: #82A18F;
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px black;
+/*    border: black 2px solid;*/
+    box-shadow: 2px 2px 4px black;
 }
 #footer{
     background-color: #82A18F;
@@ -55,7 +104,6 @@
 #footerColumn{
     text-align: center;
 }
-
 #footerList{
     list-style-type: none;
     margin: 0;
@@ -69,27 +117,10 @@
     padding: 16px;
     text-decoration: none;
     text-align: center;
+    text-shadow: 2px 2px 4px black;
+    font-size: 16px;
+
 }
 li{
     display: inline-block;
 }
-/*
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}*/
