@@ -5,14 +5,21 @@
 .navbar-brand{
     font-size: 50px;
 }
+.navbar-brand:hover{
+    color: white;
+}
 .navbar-nav{
     padding: 10px;
+}
+.navOptions{
+    color: white;
 }
 .navbar-header{
     padding: 10px;
 }
 .navbar{
     background-color: #82A18F;
+    margin: 0;
 }
 .navbar-brand{
     color: white;
@@ -20,4 +27,25 @@
 }
 .headerIcons{
     color: white;
+}
+#searchContainer{
+    background-image: url(../Images/homeBackground2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 0;
+    padding: 0;
+    min-height: 1000px;
+}
+#homeMain{
+    margin: 0;
+    padding: 0;
+}
+#homeSearchForm{
+    margin: 100px auto;
+    padding: 10px;
+    width: 50%;
+}
+#checkIn{
+/*    margin-top: 20px;*/
 }
