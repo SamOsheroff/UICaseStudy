@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+#beeHiveLogoText{
+    text-shadow: 2px 2px 4px black;
+
+}
 .navbar-brand{
     font-size: 50px;
 }
@@ -15,6 +19,9 @@
 }
 .navOptions{
     color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px black;
+
 }
 .navbar-header{
     padding: 10px;
@@ -29,6 +36,9 @@
 }
 .headerIcons{
     color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px black;
+
 }
 
 
@@ -46,6 +56,13 @@ min-height: 1000px;
 margin: 0;
 padding: 0;
 }
+#homeSearch{
+    box-shadow: 2px 2px 4px black;
+}
+#homeSearchSubmitButton{
+    box-shadow: 2px 2px 4px black;
+}
+
 #homeSearchForm{
 margin: 100px auto;
 padding: 10px;
@@ -56,6 +73,7 @@ width: 50%;
 }
 
 
+/* ------------------Sam CSS-------------------------- */
 /* ------------------Sam CSS-------------------------- */
 #bodydash{
         background-color:#fff7e5;
@@ -80,4 +98,65 @@ h3{
 }
 .marg_top{
     padding-top:5px
+}
+/* ----------------- end Sam CSS --------*/
+#checkInCheckOut{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+.homeInputLabels{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+#checkInInput{
+/*    margin-top: 20px;*/
+    box-shadow: 2px 2px 4px black;
+}
+#checkOutInput{
+    box-shadow: 2px 2px 4px black;
+}
+#guestsHomeInput{
+    box-shadow: 2px 2px 4px black;
+
+}
+#homeSubmitButton{
+    background-color: #82A18F;
+    color: white;
+    width: 50%;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px black;
+/*    border: black 2px solid;*/
+    box-shadow: 2px 2px 4px black;
+}
+#footer{
+    background-color: #82A18F;
+}
+#footerColumn{
+    text-align: center;
+}
+#footerList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.footerListItems{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    font-size: 16px;
+
+}
+li{
+    display: inline-block;
 }
