@@ -5,6 +5,8 @@
 .navbar-brand{
     font-size: 50px;
 }
+
+
 .navbar-brand:hover{
     color: white;
 }
@@ -28,24 +30,48 @@
 .headerIcons{
     color: white;
 }
+
+
+
 #searchContainer{
-    background-image: url(../Images/homeBackground2.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    margin: 0;
-    padding: 0;
-    min-height: 1000px;
+background-image: url(../Images/homeBackground2.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+background-position:center;
+margin:x 0;
+padding: 0;
+min-height: 1000px;
 }
 #homeMain{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 #homeSearchForm{
-    margin: 100px auto;
-    padding: 10px;
-    width: 50%;
+margin: 100px auto;
+padding: 10px;
+width: 50%;
 }
 #checkIn{
-/*    margin-top: 20px;*/
+/* margin-top: 20px;*/
+}
+
+
+/* ------------------Sam CSS-------------------------- */
+#bodydash{
+        background-color:#fff7e5;
+}
+.bodyrow{
+    padding:0 25px 0 25px
+}
+h3{
+    padding: 0;
+    margin: 0;
+    color: white
+    
+}
+.topwell{
+    margin-top:50px
+}
+.well{
+    background-color:white
 }
