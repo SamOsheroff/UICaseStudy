@@ -72,9 +72,15 @@ padding: 0;
     box-shadow: 2px 2px 4px black;
 }
 #homeSearchForm{
+<<<<<<< HEAD
     margin: 100px auto 0;
     padding: 10px;
     width: 50%;
+=======
+margin: 100px auto;
+padding: 10px;
+width: 50%;
+>>>>>>> 5d086b4c70adaee34eeb23ebeeff7b537a30a997
 }
 #checkIn{
 /* margin-top: 20px;*/
