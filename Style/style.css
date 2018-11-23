@@ -66,7 +66,6 @@
 #homeSearchSubmitButton{
     box-shadow: 2px 2px 4px black;
 }
-
 #homeSearchForm{
     margin: 150px auto 0;
     padding: 10px;
@@ -135,6 +134,44 @@
     color: black;
 
 }
-li{
+.footerListItem{
     display: inline-block;
+}
+.carouselImage{
+    margin: 0 auto;
+}
+#aboutUsContainer{
+    text-align: center;
+}
+#termsAndConditionsMainContainer{
+}
+#termsAndCondtionsContainer{
+    text-align:center;
+}
+
+#aboutUsHeader{
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border: 2px black solid;
+    display: inline-block;
+    background-color: #82A18F;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    
+}
+#termsAndConditions{
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border: 2px black solid;
+    display: inline-block;
+    background-color: #82A18F;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+body{
+    background-color: #FFF7E5; 
 }
