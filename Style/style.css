@@ -1,16 +1,14 @@
+/*Andrew CSS Start*/
 #beeHiveLogo{
     padding: 0;
     margin: 0;
 }
 #beeHiveLogoText{
     text-shadow: 2px 2px 4px black;
-
 }
 .navbar-brand{
     font-size: 50px;
 }
-
-
 .navbar-brand:hover{
     color: #FFF7E5;
 }
@@ -21,7 +19,6 @@
     color: white;
     font-size: 18px;
     text-shadow: 2px 2px 4px black;
-
 }
 .navOptions:hover{
     background-color: #FFF7E5;
@@ -42,27 +39,24 @@
     color: white;
     font-size: 18px;
     text-shadow: 2px 2px 4px black;
-    
-
 }
 
 .headerIcons:hover{
     background-color: #FFF7E5;
     color:black;
 }
-
 #searchContainer{
-background-image: url(../Images/homeBackground2.jpg);
-background-size:cover;
-background-repeat: no-repeat;
-background-position:center;
-margin:x 0;
-padding: 0;
-min-height: 1000px;
+    background-image: url(../Images/homeBackground2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin:x 0;
+    padding: 0;
+    min-height: 1000px;
 }
 #homeMain{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #homeSearch{
     box-shadow: 2px 2px 4px black;
@@ -71,42 +65,13 @@ padding: 0;
     box-shadow: 2px 2px 4px black;
 }
 #homeSearchForm{
-margin: 100px auto;
-padding: 10px;
-width: 50%;
+    margin: 100px auto 0;
+    padding: 10px;
+    width: 50%;
 }
 #checkIn{
 /* margin-top: 20px;*/
 }
-
-
-/* ------------------Sam CSS-------------------------- */
-/* ------------------Sam CSS-------------------------- */
-#bodydash{
-        background-color:#fff7e5;
-}
-.bodyrow{
-    padding:0 25px 0 25px
-}
-h3{
-    padding: 0;
-    margin: 0;
-    color: white
-    
-}
-.topwell{
-    margin-top:15px
-}
-.well{
-    background-color:white
-}
-.pad_left{
-    padding:0 0 0 10px
-}
-.marg_top{
-    padding-top:5px
-}
-/* ----------------- end Sam CSS --------*/
 #checkInCheckOut{
     width: 50%;
     margin: 0 auto;
@@ -207,6 +172,40 @@ h3{
     border-radius: 10px;
     margin-bottom: 18px;
 }
+.carouselCaptionText{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
 body{
     background-color: #FFF7E5; 
 }
+/*Andrew CSS End*/
+
+/* ------------------Sam CSS-------------------------- */
+/* ------------------Sam CSS-------------------------- */
+#bodydash{
+        background-color:#fff7e5;
+}
+.bodyrow{
+    padding:0 25px 0 25px
+}
+h3{
+    padding: 0;
+    margin: 0;
+    color: white
+    
+}
+.topwell{
+    margin-top:15px
+}
+.well{
+    background-color:white
+}
+.pad_left{
+    padding:0 0 0 10px
+}
+.marg_top{
+    padding-top:5px
+}
+/* ----------------- end Sam CSS --------*/
+
