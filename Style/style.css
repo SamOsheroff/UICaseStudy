@@ -70,8 +70,14 @@ h3{
     
 }
 .topwell{
-    margin-top:50px
+    margin-top:15px
 }
 .well{
     background-color:white
+}
+.pad_left{
+    padding:0 0 0 10px
+}
+.marg_top{
+    padding-top:5px
 }
