@@ -72,6 +72,83 @@
 #checkIn{
 /* margin-top: 20px;*/
 }
+
+
+
+/* ------------------Sam CSS-------------------------- */
+
+#bodydash{
+        background-color:#fff7e5;
+}
+.bodyrow{
+    padding:0 25px 0 25px
+}
+h3{
+    padding: 0;
+    margin: 0;
+    color: white
+    
+}
+.topwell{
+    margin-top:15px
+}
+.well{
+    background-color:white
+}
+.pad_left{
+    padding:0 0 0 15px
+}
+.pad_2{
+    padding:0 25px 0 10px
+}
+.pad_3{
+    padding:0 25px 0 35px
+}
+.pad_top{
+    padding-top:5px
+}
+
+.userStats{
+    font-size:20px
+}
+.signOutButton{
+    border-width:2px
+}
+.dashOpt{
+    background-color:#82A18F;
+    border-radius:5;
+    border-width:0;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+}
+.dashOpt:hover {
+    background-color:rgba(130, 161, 143, .8)
+}
+#dashOpt2{
+    padding:0;
+    margin:none;
+    border:none;
+}
+.myListsBtn{
+    background-color:inherit;
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    margin:0;
+    padding:15px 0 15px 0;
+}
+.container-fluid:before{
+    content:none;
+}
+
+.container-fluid:after{
+     content:none;
+}
+    
+   
+/* ----------------- end Sam CSS --------*/
+
 #checkInCheckOut{
     width: 50%;
     margin: 0 auto;
@@ -129,6 +206,7 @@
     font-size: 16px;
 
 }
+
 .footerListItems:hover{
     background-color: #FFF7E5;
     color: black;
@@ -182,35 +260,8 @@ body{
 
 /*Andrew CSS End*/
 
-/* ------------------Sam CSS-------------------------- */
-/* ------------------Sam CSS-------------------------- */
-#bodydash{
-        background-color:#fff7e5;
-}
-.bodyrow{
-    padding:0 25px 0 25px
-}
-h3{
-    padding: 0;
-    margin: 0;
-    color: white
-    
-}
-.topwell{
-    margin-top:15px
-}
-.well{
-    background-color:white
-}
-.pad_left{
-    padding:0 0 0 10px
-}
-.marg_top{
-    padding-top:5px
-}
-/* ----------------- end Sam CSS --------*/
 
-=======
+
 
 /*Paloma's CSS Code*/
 #registrationPageBody{
@@ -359,4 +410,5 @@ h3{
    margin-top: 10px;
     margin-bottom:10px;
 }
+
 
