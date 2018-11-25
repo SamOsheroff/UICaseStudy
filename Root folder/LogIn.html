@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>BeeHive</title>
+        <!-- <link rel = "stylesheet" href = "Exercise1.css"> -->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel = "stylesheet" href = "../Style/style.css">
+    </head>
+    <body id = "bodyLogin">
+         <nav class = "nav navbar">
+            <div class = "container-fluid" id = "header">
+                <div class = "navbar-header">
+                    <div id = "headerLogo">
+                        <a href = "HomePageUnregistered.html" class = "navbar-brand">BeeHive</a>
+                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
+                    </div>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#" class = "navOptions">Travel Search</a></li>
+                  <li><a href="#" class = "navOptions">Dashboard</a></li>
+                  <li><a href="#" class = "navOptions">Help</a></li>
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                      <li ><a href="RegistrationPage.html" class = "headerIcons"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<!--                      <li ><a href="#" class = "headerIcons"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                    </ul>
+            </div>
+        </nav>
+        <!-- to creat the log in form for platform-->
+        <div class = "container-fluid" id ="LogInBackground">
+            <div class = "row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 text-center" id= "columnLogIn" >
+                    <h1> Login </h1>
+                    <br>
+                    <form class = "form-horizontal">
+                        <div class = "form-group">
+                            <label class = "col-sm-2" for ="username" id = "UsernameLabel">Username:</label>
+                            <div class = "col-sm-10">
+                                <input type = "text" name = "username" class = "form-control" id = "username" placeholder= "Enter username" required>
+                            </div>
+                        </div>
+                    <div class = "form-group">
+                        <label class = "control-label col-sm-2" for = "pwd" id = "PasswordLabel">Password:</label>
+                            <div class = "col-sm-10">
+                            <input type = "password" name = "pwd" class = "form-control" id = "pwd" placeholder = "Enter password" required>
+                            </div>
+                        </div>
+                    <div class="form-group">        
+                        <div class="col-sm-12">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="remember"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                <div class="form-group">        
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-primary" onclick="logInForm()" id = "logInFormButton"  >Log In</button>
+                    </div>
+                </div>
+                    <p class = "text-muted">Don't have an account?<a href = "RegistrationPage.html"> Register Here</a></p>
+                    <p class = "text-muted"><a href =  "ForgotUsername.html"> Forgot Username?</a></p> <p class = "text-muted"><a href ="ForgotPassword.html"> Forgot Password?</a></p>
+                </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var today = new Date(); 
+        var expiry = new Date(today.getTime() +30 * 24 * 3600 * 1000);
+        function setCookie(name,value){
+            document.cookie = name + "=" + escape(value) + "; path =/; expires=" + expiry.toGMTString();
+        }
+        
+        function getCookie(cname){
+            var name = cnmae + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i =0; i<ca.length; i++){
+                var c = ca[i];
+                while (c.charAt(0) == ' '){
+                    c = c.substring(1); 
+                }
+                if (c.indexOf(name)== 0){
+                    return c.substring(name.length, c.length); 
+                    
+                }
+                }
+            return "";
+            }
+        function logInForm(){
+            var logForm = document.getElementsByClassName("form-horizontal");
+            var cookie = getCookie(logForm.username.value);
+            var cookieDecoded = JSON.parse(cookie);
+            if (cookie =="" || cookie == null){
+                alert("Specified username is not registered")
+            }
+            else if (cookieDecoded.password==logForm.password.value){
+//                     Need to populate personal information form
+                
+            }
+            else{
+                alert("Incorrect username/password combination")
+            }
+            }
+            
+            
+        }
+    
+    
+    
+    
+    </script>
