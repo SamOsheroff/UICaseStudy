@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /*Andrew CSS Start*/
-=======
-
->>>>>>> 9984c18afb19bfc0cc49e9b5245a8c97a4ea2399
 #beeHiveLogo{
     padding: 0;
     margin: 0;
@@ -69,21 +65,9 @@
     box-shadow: 2px 2px 4px black;
 }
 #homeSearchForm{
-<<<<<<< HEAD
     margin: 100px auto 0;
     padding: 10px;
     width: 50%;
-=======
-<<<<<<< HEAD
-    margin: 100px auto 0;
-    padding: 10px;
-    width: 50%;
-=======
-margin: 100px auto;
-padding: 10px;
-width: 50%;
->>>>>>> 5d086b4c70adaee34eeb23ebeeff7b537a30a997
->>>>>>> 9984c18afb19bfc0cc49e9b5245a8c97a4ea2399
 }
 #checkIn{
 /* margin-top: 20px;*/
@@ -189,7 +173,7 @@ width: 50%;
     margin-bottom: 18px;
 }
 .carouselCaptionText{
-    font-size: 20px;
+    font-size: 50px;
     text-shadow: 2px 2px 4px black;
 }
 body{
