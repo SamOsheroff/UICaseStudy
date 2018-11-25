@@ -12,44 +12,62 @@
         <title>BeeHive</title>
         <!-- <link rel = "stylesheet" href = "Exercise1.css"> -->
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel = "stylesheet" href = "../Style/style.css">
     </head>
-    <body>
+    <body id = "registrationPageBody">
+         <nav class = "nav navbar">
+            <div class = "container-fluid" id = "header">
+                <div class = "navbar-header">
+                    <div id = "headerLogo">
+                        <a href = "HomePageUnregistered.html" class = "navbar-brand">BeeHive</a>
+                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
+                    </div>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#" class = "navOptions">Travel Search</a></li>
+                  <li><a href="#" class = "navOptions">Dashboard</a></li>
+                  <li><a href="#" class = "navOptions">Help</a></li>
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                      <li ><a href="LogIn.html" class = "headerIcons"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+            </div>
+        </nav>
         <!-- Creates the title of the page which indicates that you are registering for an account -->
        <div class= "container-fluid">
             <div class= "row" id = "container">
-                <div class="col-sm-4"></div>
-                <div class = "col-sm-4" id = "column">
+                <div class="col-sm-4 text-center"></div>
+                <div class = "col-sm-4 text-center" id = "columnRegistrationPage">
                     <h1> Register </h1>
                     <p> Membership is free, and we won't share any of your information with third parties.</p>
         <!-- Creates the registraion form -->
                     <form id = "registrationForm">
-                    Username: <input class = "registrationInput" name = "username" type = "text" required>
+                    Username: <input class = "registrationInput" name = "username" type = "text" id="registrationInputUsername" required>
                     <br>
-                    Password: <input class = "registrationInput" name = "password" type = "text"
+                    Password: <input class = "registrationInput" name = "password" id="registrationInputPassword" type = "text"
                     required>
                     <h3 class = "registrationPersonalInfo"> Personal Information </h3>
-                        First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" required>
-                        Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" type = "text" required> 
+                        First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" id="registrationInputFirstName" required>
+                        Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" id="registrationInputLastName" type = "text" required> 
                         <br>
-                        Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" required> 
+                        Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" id="registrationInputEmail" required> 
+<!--                        Select a profile picture: <input class = "registrationInput" form = "registrationForm" name = "myFile" type = "file">-->
+                        Address: <input class = "registrationInput" form = "registrationForm" name= "address" id="registrationInputAddress" type = "text" required> 
                         <br>
-                        Select a profile picture: <input class = "registrationInput" form = "registrationForm" name = "myFile" type = "file">
-                        Address: <input class = "registrationInput" form = "registrationForm" name= "address" type = "text" required> 
+                        Date of Birth: <input class = "registrationInput" form = "registrationForm" name="DOB" id="registrationInputDOB" type = "date" required> 
                         <br>
-                        Date of Birth: <input class = "registrationInput" form = "registrationForm" name="DOB" type = "date" required> 
+                        Phone Number: <input class = "registrationInput" form = "registrationForm" name ="DOB" id="registrationInputPhone" type = "text">
                         <br>
-                        Phone Number: <input class = "registrationInput" form = "registrationForm" name ="DOB" type = "text">
-                        <br>
-                        I have read accept the terms of use. <input type = "checkbox" form = "registrationForm" required> 
+                        I have read accept the terms of use. <input type = "checkbox" form = "registrationForm" id= "termsandconditions" required> 
                         <br> 
-                        <input type="submit" class="btn btn-info" value="Save" onclick = "saveForm()">
+                        <input type="submit" class="btn btn-info" value="Save" id= "registrationButtonsSubmit" onclick = "saveForm()">
 <!--                        <button type = "submit" id = "save" onclick = "saveForm()" form = "registrationForm">Save</button>-->
-                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-danger" id = "registrationButtonsDelete">Delete</button>
 <!--                        <button type = "reset" id = "delete" form = "registrationForm">Delete</button>-->
-                        <p class = "text-muted"> Already have an account? <a href = "LogIn.html"> Sign In </a></p>
+                        <p class = "text-muted"> Already have an account? <a href = "LogIn.html"> Log In </a></p>
                     </form>
             </div>
-            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center"></div>
             </div>
         </div>   
     </body>
