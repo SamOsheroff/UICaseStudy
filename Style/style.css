@@ -210,3 +210,151 @@ h3{
 body{
     background-color: #FFF7E5; 
 }
+
+/*Paloma's CSS Code*/
+#registrationPageBody{
+    background-color: #FFF7e5
+}
+#columnRegistrationPage{
+    width:600px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 70px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: -80px;
+}
+
+#registrationInputUsername{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+#registrationInputPassword{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputFirstName{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputLastName{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputEmail{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputAddress{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputDOB{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputPhone{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#bodyLogin{
+    background-color: #FFF7e5
+}
+#columnLogIn{
+    width: 500px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 70px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+#username{
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+#pwd{
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+#UsernameLabel{
+    font-size: 15.4px;
+    padding-top: 5px;
+}
+#PasswordLabel{
+    font-size: 15.4px;
+    padding-top: 5px;
+}
+#termsandconditions{
+    margin-bottom:10px;
+}
+
+#registrationButtonsSubmit{
+    margin-bottom: 10px;
+}
+
+#registrationButtonsDelete{
+    margin-bottom: 10px;
+}
+
+#columnForgotPassword{
+    width: 500px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 150px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+
+#forgotPasswordInput{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+}
+
+#resetPasswordButton{
+   margin-top: 10px;
+    margin-bottom:10px;
+}
+#columnRecoverUsername{
+    width: 500px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 150px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+
+#recoverUsernameInput{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+}
+
+#recoverUsernameButton{
+   margin-top: 10px;
+    margin-bottom:10px;
+}
