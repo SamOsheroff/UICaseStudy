@@ -74,7 +74,7 @@ width: 50%;
 
 
 /* ------------------Sam CSS-------------------------- */
-/* ------------------Sam CSS-------------------------- */
+
 #bodydash{
         background-color:#fff7e5;
 }
@@ -94,11 +94,57 @@ h3{
     background-color:white
 }
 .pad_left{
-    padding:0 0 0 10px
+    padding:0 0 0 15px
 }
-.marg_top{
+.pad_2{
+    padding:0 25px 0 10px
+}
+.pad_3{
+    padding:0 25px 0 35px
+}
+.pad_top{
     padding-top:5px
 }
+
+.userStats{
+    font-size:20px
+}
+.signOutButton{
+    border-width:2px
+}
+.dashOpt{
+    background-color:#82A18F;
+    border-radius:5;
+    border-width:0;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+}
+.dashOpt:hover {
+    background-color:rgba(130, 161, 143, .8)
+}
+#dashOpt2{
+    padding:0;
+    margin:none;
+    border:none;
+}
+.myListsBtn{
+    background-color:inherit;
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    margin:0;
+    padding:15px 0 15px 0;
+}
+.container-fluid:before{
+    content:none;
+}
+
+.container-fluid:after{
+     content:none;
+}
+    
+   
 /* ----------------- end Sam CSS --------*/
 #checkInCheckOut{
     width: 50%;
@@ -157,6 +203,4 @@ h3{
     font-size: 16px;
 
 }
-li{
-    display: inline-block;
-}
+
