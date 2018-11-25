@@ -1,18 +1,16 @@
+/*Andrew CSS Start*/
 #beeHiveLogo{
     padding: 0;
     margin: 0;
 }
 #beeHiveLogoText{
     text-shadow: 2px 2px 4px black;
-
 }
 .navbar-brand{
     font-size: 50px;
 }
-
-
 .navbar-brand:hover{
-    color: white;
+    color: #FFF7E5;
 }
 .navbar-nav{
     padding: 10px;
@@ -21,7 +19,10 @@
     color: white;
     font-size: 18px;
     text-shadow: 2px 2px 4px black;
-
+}
+.navOptions:hover{
+    background-color: #FFF7E5;
+    color: black;
 }
 .navbar-header{
     padding: 10px;
@@ -38,23 +39,24 @@
     color: white;
     font-size: 18px;
     text-shadow: 2px 2px 4px black;
-
 }
 
-
-
+.headerIcons:hover{
+    background-color: #FFF7E5;
+    color:black;
+}
 #searchContainer{
-background-image: url(../Images/homeBackground2.jpg);
-background-size:cover;
-background-repeat: no-repeat;
-background-position:center;
-margin:x 0;
-padding: 0;
-min-height: 1000px;
+    background-image: url(../Images/homeBackground2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin:x 0;
+    padding: 0;
+    min-height: 1000px;
 }
 #homeMain{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #homeSearch{
     box-shadow: 2px 2px 4px black;
@@ -62,15 +64,15 @@ padding: 0;
 #homeSearchSubmitButton{
     box-shadow: 2px 2px 4px black;
 }
-
 #homeSearchForm{
-margin: 100px auto;
-padding: 10px;
-width: 50%;
+    margin: 100px auto 0;
+    padding: 10px;
+    width: 50%;
 }
 #checkIn{
 /* margin-top: 20px;*/
 }
+
 
 
 /* ------------------Sam CSS-------------------------- */
@@ -146,6 +148,7 @@ h3{
     
    
 /* ----------------- end Sam CSS --------*/
+
 #checkInCheckOut{
     width: 50%;
     margin: 0 auto;
@@ -203,4 +206,209 @@ h3{
     font-size: 16px;
 
 }
+
+.footerListItems:hover{
+    background-color: #FFF7E5;
+    color: black;
+
+}
+.footerListItem{
+    display: inline-block;
+}
+.carouselImage{
+    margin: 0 auto;
+}
+#aboutUsContainer{
+    text-align: center;
+}
+#termsAndConditionsMainContainer{
+}
+#termsAndCondtionsContainer{
+    text-align:center;
+}
+
+#aboutUsHeader{
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border: 2px black solid;
+    display: inline-block;
+    background-color: #82A18F;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    
+}
+#termsAndConditions{
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border: 2px black solid;
+    display: inline-block;
+    background-color: #82A18F;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+.carouselCaptionText{
+    font-size: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+body{
+    background-color: #FFF7E5; 
+}
+
+/*Andrew CSS End*/
+
+
+
+
+/*Paloma's CSS Code*/
+#registrationPageBody{
+    background-color: #FFF7e5
+}
+#columnRegistrationPage{
+    width:600px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 70px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: -80px;
+}
+
+#registrationInputUsername{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+#registrationInputPassword{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputFirstName{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputLastName{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputEmail{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputAddress{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputDOB{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#registrationInputPhone{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#bodyLogin{
+    background-color: #FFF7e5
+}
+#columnLogIn{
+    width: 500px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 70px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+#username{
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+#pwd{
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+#UsernameLabel{
+    font-size: 15.4px;
+    padding-top: 5px;
+}
+#PasswordLabel{
+    font-size: 15.4px;
+    padding-top: 5px;
+}
+#termsandconditions{
+    margin-bottom:10px;
+}
+
+#registrationButtonsSubmit{
+    margin-bottom: 10px;
+}
+
+#registrationButtonsDelete{
+    margin-bottom: 10px;
+}
+
+#columnForgotPassword{
+    width: 500px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 150px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+
+#forgotPasswordInput{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+}
+
+#resetPasswordButton{
+   margin-top: 10px;
+    margin-bottom:10px;
+}
+#columnRecoverUsername{
+    width: 500px;
+    border: solid 5px;
+    border-color: #82A18F;
+    background-color:white;
+    margin-top: 150px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+
+#recoverUsernameInput{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+}
+
+#recoverUsernameButton{
+   margin-top: 10px;
+    margin-bottom:10px;
+}
+
 
