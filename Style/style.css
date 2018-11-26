@@ -264,6 +264,7 @@ body{
 
 
 /*Paloma's CSS Code*/
+
 #registrationPageBody{
     background-color: #FFF7e5
 }
@@ -336,7 +337,12 @@ body{
     margin-top: 70px;
     padding: 15px;
     border-radius: 10px;
+    
  
+}
+#logInSpacer{
+        min-height: 750;
+
 }
 #username{
     font-size: 20px;
