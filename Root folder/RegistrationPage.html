@@ -44,7 +44,7 @@
                     <form id = "registrationForm">
                     Username: <input class = "registrationInput" name = "username" type = "text" id="registrationInputUsername" required>
                     <br>
-                    Password: <input class = "registrationInput" name = "password" id="registrationInputPassword" type = "text"
+                    Password: <input class = "registrationInput" name = "password" id="registrationInputPassword" type = "password"
                     required>
                     <h3 class = "registrationPersonalInfo"> Personal Information </h3>
                         First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" id="registrationInputFirstName" required>
@@ -89,12 +89,13 @@
     <script> 
         var today = new Date(); 
         var expiry = new Date(today.getTime() +30 * 24 * 3600 * 1000);
+        
         function setCookie(name,value){
             document.cookie = name + "=" + escape(value) + "; path =/; expires=" + expiry.toGMTString();
         }
         
         function getCookie(cname){
-            var name = cnmae + "=";
+            var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
             var ca = decodedCookie.split(';');
             for (var i =0; i<ca.length; i++){
