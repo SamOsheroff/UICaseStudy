@@ -13,6 +13,9 @@
         <!-- <link rel = "stylesheet" href = "Exercise1.css"> -->
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <link rel = "stylesheet" href = "../Style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
     </head>
     <body id = "registrationPageBody">
          <nav class = "nav navbar">
@@ -47,20 +50,20 @@
                     Password: <input class = "registrationInput" name = "password" id="registrationInputPassword" type = "password"
                     required>
                     <h3 class = "registrationPersonalInfo"> Personal Information </h3>
-                        First Name: <input class = "registrationInput" form = "registrationForm" name = "firstName" type = "text" id="registrationInputFirstName" required>
-                        Last Name: <input class = "registrationInput" form = "registrationForm" name = "lastName" id="registrationInputLastName" type = "text" required> 
+                        First Name: <input class = "registrationInput"  name = "firstName" type = "text" id="registrationInputFirstName" required>
+                        Last Name: <input class = "registrationInput" name = "lastName" id="registrationInputLastName" type = "text" required> 
                         <br>
-                        Email: <input class = "registrationInput" form = "registrationForm" name = "email " type = "text" id="registrationInputEmail" required> 
+                        Email: <input class = "registrationInput" name = "email" type ="text" id="registrationInputEmail" required> 
 <!--                        Select a profile picture: <input class = "registrationInput" form = "registrationForm" name = "myFile" type = "file">-->
-                        Address: <input class = "registrationInput" form = "registrationForm" name= "address" id="registrationInputAddress" type = "text" required> 
+                        Address: <input class = "registrationInput" name= "address" id="registrationInputAddress" type = "text" required> 
                         <br>
-                        Date of Birth: <input class = "registrationInput" form = "registrationForm" name="DOB" id="registrationInputDOB" type = "date" required> 
+                        Date of Birth: <input class = "registrationInput" name="DOB" id="registrationInputDOB" type = "date" required> 
                         <br>
-                        Phone Number: <input class = "registrationInput" form = "registrationForm" name ="DOB" id="registrationInputPhone" type = "text">
+                        Phone Number: <input class = "registrationInput" name ="phoneNumber" id="registrationInputPhone" type = "text">
                         <br>
                         I have read accept the terms of use. <input type = "checkbox" form = "registrationForm" id= "termsandconditions" required> 
                         <br> 
-                        <input type="submit" class="btn btn-info" value="Save" id= "registrationButtonsSubmit" onclick = "saveForm()">
+                        <input type="submit" class="btn btn-info" value="Save" id= "registrationButtonsSubmit" onclick = "saveForm()" form = "registrationForm">
 <!--                        <button type = "submit" id = "save" onclick = "saveForm()" form = "registrationForm">Save</button>-->
                         <button type="button" class="btn btn-danger" id = "registrationButtonsDelete">Delete</button>
 <!--                        <button type = "reset" id = "delete" form = "registrationForm">Delete</button>-->
@@ -90,32 +93,33 @@
         var today = new Date(); 
         var expiry = new Date(today.getTime() +30 * 24 * 3600 * 1000);
         
-        function setCookie(name,value){
-            document.cookie = name + "=" + escape(value) + "; path =/; expires=" + expiry.toGMTString();
+        function setCookie(name, value) {
+            document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
         }
         
-        function getCookie(cname){
+        function getCookie(cname) {
             var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
             var ca = decodedCookie.split(';');
-            for (var i =0; i<ca.length; i++){
+            for(var i = 0; i <ca.length; i++) {
                 var c = ca[i];
-                while (c.charAt(0) == ' '){
-                    c = c.substring(1); 
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
                 }
-                if (c.indexOf(name)== 0){
-                    return c.substring(name.length, c.length); 
-                    
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
                 }
-                }
-            return "";
             }
+            return "";
+        }
         
         function saveForm() { 
             var form = document.getElementById('registrationForm');
             if (getCookie(form.username.value) == "") {
-                setCookie(form.username.value, JSON.stringify({password:form.password.value, firstName:form.firstName.value,lastName:form.lastName.value,email:form.email.value, address:form.address.value,DOB:form.DOB.value,phoneNumber:form.phoneNumber.value}));
-                return true;
+                var obj = {username:form.username.value,password:form.password.value,firstName:form.firstName.value,lastName:form.lastName.value,email:form.email.value,address:form.address.value,DOB:form.DOB.value,phoneNumber:form.phoneNumber.value}
+                var myJSON = JSON.stringify(obj);
+                setCookie(form.username.value, myJSON);
+                return true
             }
             else{
                 alert("Username already exists");
