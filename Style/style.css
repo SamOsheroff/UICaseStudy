@@ -24,6 +24,7 @@
     background-color: #FFF7E5;
     color: black;
 }
+
 .navbar-header{
     padding: 10px;
 }
@@ -107,6 +108,9 @@ h3{
 .pad_top{
     padding-top:5px
 }
+.pad_top_2{
+    padding-top:15px
+}
 
 .userStats{
     font-size:20px
@@ -146,7 +150,34 @@ h3{
      content:none;
 }
     
-   
+
+.prefbox{
+        background-color: white;
+        float:left;
+        width:auto;
+        display:flex;
+        border: 2px solid black;
+        padding: 7px 5px 7px 5px;
+        margin: 5px 5px 5px 5px;
+        border-radius:5px
+}
+
+.clearbox{
+    padding:0;
+    margin:0;
+}
+.glyphicon-remove{
+    padding: 1px 0 0 2px
+}
+.newpref{
+    min-width:50px;
+    max-width:100px;
+    text-align:center;
+    height:20px;
+    transition: width 0.25s;
+    text-align:center;
+    border-style:none
+}
 /* ----------------- end Sam CSS --------*/
 
 #checkInCheckOut{
