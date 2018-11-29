@@ -46,6 +46,9 @@
     background-color: #FFF7E5;
     color:black;
 }
+.script{
+    background-color:red;;
+}
 #searchContainer{
     background-image: url(../Images/homeBackground2.jpg);
     background-size:cover;
@@ -70,6 +73,40 @@
     padding: 10px;
     width: 50%;
 }
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+
+
+
 #checkIn{
 /* margin-top: 20px;*/
 }
@@ -295,6 +332,7 @@ body{
 
 
 /*Paloma's CSS Code*/
+
 #registrationPageBody{
     background-color: #FFF7e5
 }
@@ -308,6 +346,11 @@ body{
     border-radius: 10px;
     margin-left: -80px;
 }
+
+#registrationSpacer{
+    min-height: 800px;
+}
+
 
 #registrationInputUsername{
     margin-bottom: 10px;
@@ -367,8 +410,14 @@ body{
     margin-top: 70px;
     padding: 15px;
     border-radius: 10px;
+    
  
 }
+
+#logInSpacer{
+    min-height: 800px;
+
+
 #username{
     font-size: 20px;
     box-shadow: 2px 2px 4px black;
@@ -407,6 +456,9 @@ body{
     border-radius: 10px;
  
 }
+#forgotPasswordContainer{
+    min-height: 800px;
+}
 
 #forgotPasswordInput{
     margin-bottom: 10px;
@@ -429,6 +481,9 @@ body{
     border-radius: 10px;
  
 }
+#forgotUsernameContainer{
+    min-height: 800px;
+}
 
 #recoverUsernameInput{
     margin-bottom: 10px;
@@ -442,4 +497,5 @@ body{
     margin-bottom:10px;
 }
 
+/*End of Paloma's CSS*/
 
