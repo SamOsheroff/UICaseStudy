@@ -498,4 +498,144 @@ body{
 }
 
 /*End of Paloma's CSS*/
+    
+/*Start of Tamasha's CSS*/
+    .searchExp{
+    padding: 6px;
+    margin: auto;
+    display: flex;
+    width: 50%;
+}
+
+.container-fluid input[type = submit]{
+    padding: 6px;
+    margin: auto;
+    display: block;
+    width: 45%;
+    background-color: #82a18f;
+    color: white;
+}
+
+.container-fluid input[type = button]{
+    padding: 6px;
+    width: 100px;
+    background-color: #428bca;
+    color: white;
+    border-radius: 20%;
+    font-size: 14px;
+    float: right;
+}
+
+
+.searchResult{
+    height:225px;
+    width: 325px;
+    float: left;
+}
+
+ div.prefbox{
+        background-color: white;
+        float:left;
+        border: 2px solid black;
+        padding: 7px 5px 7px 5px;
+        margin: 5px 5px 5px 5px;
+        border-radius:5px
+}
+
+.prefbox{
+        background-color: white;
+        float:left;
+        width:auto;
+        display:flex;
+        border: 2px solid black;
+        padding: 7px 5px 7px 5px;
+        margin: 5px 5px 5px 5px;
+        border-radius:5px
+}
+
+.glyphicon-remove{
+    padding: 1px 0 0 2px
+}
+
+.newpref{
+    min-width:50px;
+    max-width:100px;
+    text-align:center;
+    height:20px;
+    transition: width 0.25s;
+    text-align:center;
+    border-style:none
+}
+
+.gi-unregistered{
+    font-size: 50px;
+    margin: 18px;
+    color: gray;
+}
+
+.gi-registered{
+    font-size: 50px;
+    margin: 18px;
+}
+
+.gi-rating{
+    color: yellow;
+}
+
+.icons{
+    float: left;
+    margin-top: 60px;
+}
+
+.ratings{
+    float: left;
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+.rate{
+    display: inline;
+}
+
+.page-header{
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+.dropdown{
+    display: inline;
+    float: right;
+}
+
+.columnReview {
+    float: left;
+    width: 33.33%;
+}
+
+
+
+#description{
+    float: left;
+}
+
+#SearchHeading{
+    text-align: center;
+}
+
+#body{
+    background-color: #fff7e5;
+}
+
+#res{
+    float: left;
+}
+
+#ExperienceMain{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 30px 30px 30px;
+}
+    
+/*End of Tamasha's CSS*/
+    
 
