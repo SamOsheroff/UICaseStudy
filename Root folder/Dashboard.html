@@ -108,6 +108,7 @@ function makeaprefbox(){
                             <div class="col-sm-3 userStats">
                             <strong>17</strong> Favorites
                             </div> 
+                            
                         </div>
                         </div>
                     </div>                    
@@ -127,6 +128,8 @@ function makeaprefbox(){
                             <li><a href="#">Madrid 2018</a></li>
                             <li><a href="#">Greece 2020</a></li>
                             <li><a href="#">Milan 2020</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#NewList">Add new...</a></li>
                         </ul>
                     </div>
                     <div class="well dashOpt text-center" id="dashOpt3" style="opacity:.5">
@@ -147,8 +150,46 @@ function makeaprefbox(){
                     </div>
                         <div class="row text-center">
                             <p style="font-size:18px">Collaborators: <a href="#User2">AndyB</a>, <a href="#User3">TamashaP</a></p>
-                            <button class="btn btn-default">Add Collaborators <span class="glyphicon glyphicon-plus-sign" style="padding:1px 0 0 0"></span> </button>
+                            <button class="btn btn-default" data-toggle="modal" data-target="#addUserModal">Add Collaborators <span class="glyphicon glyphicon-plus-sign" style="padding:1px 0 0 0"></span> </button>
                         </div>
+            <!--- could add in actual functionality here. if you want --->
+                    <!-- Modal -->
+<div id="addUserModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" style="font-size:40px">&times;</button>
+        <h4 class="modal-title">Add Collaborators</h4>
+      </div>
+      <div class="modal-body">
+        <p><span class="glyphicon glyphicon-search"></span>
+                    <input type='text' size='30' placeholder='Search Users...'></p>
+        
+      </div>
+    <div class="modal-footer">
+       <div style="text-align:left" class="pad_5">
+        <p style="font-size:14px" class="clearbox">
+            Suggested:
+           </p>
+        </div>
+        <div class="row pad_4">
+        <p style="font-size:20px"><a href="#TamashaP">PalomaR</a> <span class="glyphicon glyphicon-plus smallglyph"></span></p>
+      </div>
+        <div class="row pad_4">
+        <p style="font-size:20px"><a href="#TamashaP">SamO</a> <span class="glyphicon glyphicon-plus smallglyph"></span></p>
+      </div>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+                    
+                    
+                    
+                    
                <div class="row" style="padding-top:5px">         
                    <div class="col-sm-1" style="width:75px; height:50px; margin-right:10px">
                        <p style="width:auto; font-size:25px;padding:5px 0 0 0">
