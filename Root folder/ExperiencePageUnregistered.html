@@ -87,7 +87,7 @@ function makeaprefbox(){
         
         <div class = "container-fluid" id = "ExperienceResults">
             <br>
-            <input class = "searchExp" type = "text" name = "search" placeholder="Search Hotels, Experiences or Places ..." id = "res">
+            <input class = "topSearch" type = "text" name = "search" placeholder="Search Hotels, Experiences or Places ..." id = "res">
             <input type = "submit" name = "submit" id = "submit" value = "Submit" class = "button" >
             <br>
             
@@ -104,6 +104,7 @@ function makeaprefbox(){
                 <div class = "row">
                     <div class="text-center" style = "float:left">
                         <div class="col-xs">
+                            <h4>The Moulin Rouge Cabaret Show</h4>
                             <figure>
                                 <img class = "searchResult" src = "https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/5022/SITours/moulin-rouge-show-paris-in-paris-116546.jpg" alt = "" style = "margin-right: 20px">
                                 <figcaption>
@@ -137,17 +138,19 @@ function makeaprefbox(){
                             <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
                             </div>
             
+                           <div class="prefbox well">
+                                Cool
+                                <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+                            
                             <div class="prefbox well">
-                                Travel
+                                Show
                                 <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
                             </div>
                         </div>
                 
-                            <span class="glyphicon glyphicon-plus" onclick="newprefbox()" style="font-size:15px;    float:left;padding:15px 0 0 10px">
-                            </span>
-                
                         <div class = "icons">
-                            <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-star-empty gi-unregistered"></span><br>Rate</button>
+                            <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-star-empty gi-unregistered hover-item"></span><br>Rate</button>
                     
                             <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-plus gi-unregistered"></span><br>Add to List</button>
                     
