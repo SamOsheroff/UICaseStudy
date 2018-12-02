@@ -416,6 +416,7 @@ body{
 
 #logInSpacer{
     min-height: 800px;
+}
 
 
 #username{
@@ -498,9 +499,10 @@ body{
 }
 
 /*End of Paloma's CSS*/
+   
     
 /*Start of Tamasha's CSS*/
-    .searchExp{
+ .searchExp{
     padding: 6px;
     margin: auto;
     display: flex;
@@ -611,8 +613,6 @@ body{
     float: left;
     width: 33.33%;
 }
-
-
 
 #description{
     float: left;
