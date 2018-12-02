@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+        <title>BeeHive</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+        <!-- BootStrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+        <link rel = "stylesheet" href = "../Style/style.css">
+    </head>
+    
+    <script>
+        $(document).ready(function(){
+            
+             $("span.glyphicon-remove").click(function(){
+                    $(this).parent().remove();
+                });
+            
+            
+        });
+        
+    </script>
+    
+    <script>
+         function newprefbox() {
+    var prefboxesfilled = true;
+    var x = document.getElementsByClassName("prefbox");
+    for (i = 0; i < x.length; i++) {
+        if (x[i].firstChild.nodeType==1) {
+            if (x[i].firstChild.value=='') {
+                prefboxesfilled = false
+            }
+        }
+    };    
+    if (prefboxesfilled == true){
+            makeaprefbox()
+    }
+}
+function makeaprefbox(){     
+    var newinputhtml="<input type='text' class='newpref' size='7' required placeholder='New Tag'>";
+    var newxbuttonhtml="<span class='glyphicon glyphicon-remove newbox' onclick='deleteprefbox(event)'></span>";
+    var newdivhtml="<div class='well prefbox' id='new'>" + newinputhtml + newxbuttonhtml + "</div>";
+    $("#tagsdiv").append(newdivhtml)  
+}
+ function deleteprefbox(event) {
+     var x=event.target;
+     x.parentElement.remove()
+}
+        
+    </script>
+    
+    <body id = "body">
+         <nav class = "nav navbar">
+            <div class = "container-fluid" id = "header">
+                <div class = "navbar-header">
+                    <div id = "headerLogo">
+                        <a href = "HomePageUnregistered.html" class = "navbar-brand">BeeHive</a>
+                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
+                    </div>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#" class = "navOptions">Travel Search</a></li>
+                  <li><a href="#" class = "navOptions">Dashboard</a></li>
+                  <li><a href="#" class = "navOptions">Help</a></li>
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                      <li ><a href="#" class = "headerIcons"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li ><a href="#" class = "headerIcons"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+            </div>
+        </nav>
+        
+        
+        <div class = "container-fluid" id = "ExperienceResults">
+            <br>
+            <input class = "searchExp" type = "text" name = "search" placeholder="Search Hotels, Experiences or Places ..." id = "res">
+            <input type = "submit" name = "submit" id = "submit" value = "Submit" class = "button" >
+            <br>
+            
+            <div class = "container-fluid" id = "ExperienceMain">
+                
+                <div class = "page-header">
+                <h3 class = "searchHeader">Current Search: <b>Paris, France</b> 
+                        <input type = "button" name = "book" id = "book" value = "Book" class = "button">  
+                        <div style = "float:right; margin-right: 20px; color: #82a18f"><b>$123</b><br><font size = "-1.2">per person</font></div>
+
+                </h3>
+                    </div>
+                
+                <div class = "row">
+                    <div class="text-center" style = "float:left">
+                        <div class="col-xs">
+                            <figure>
+                                <img class = "searchResult" src = "https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/5022/SITours/moulin-rouge-show-paris-in-paris-116546.jpg" alt = "" style = "margin-right: 20px">
+                                <figcaption>
+                                    <div class = "ratings">
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star-empty gi-rating"></span>
+                    
+                                        <h4 class = "rate"><b>4/5</b></h4>
+                                        <h5 style = "text-align: center"> 45 reviews </h5>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>   
+                    
+                    </div>
+
+                
+                    <div class = "middleResults">
+                    
+                        <p>With a flash of bright feathers and sparkling sequins, Féerie—France’s ultimate  cancan show—makes for a razzle-dazzle evening out in the City of Light. Treat yourself to an evening of iconic Parisian cabaret, all while sipping champagne and soaking up the magical Belle Époque ambiance at the historic Moulin Rouge.</p>
+                
+                        <h4>Tags:</h4> 
+                
+                        <div id="tagsdiv">
+                     
+                            <div class="prefbox well">
+                                France
+                            <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+            
+                            <div class="prefbox well">
+                                Travel
+                                <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+                        </div>
+                
+                            <span class="glyphicon glyphicon-plus" onclick="newprefbox()" style="font-size:15px;    float:left;padding:15px 0 0 10px">
+                            </span>
+                
+                        <div class = "icons">
+                            <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-star-empty gi-unregistered"></span><br>Rate</button>
+                    
+                            <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-plus gi-unregistered"></span><br>Add to List</button>
+                    
+                            <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-share-alt gi-unregistered"></span><br>Share</button>
+                        </div>
+                    </div>
+                    
+                    </div>
+                
+                <hr>
+                <div class = "page-header">
+                    <h3>Reviews
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter By
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Newest</a></li>
+                                <li><a href="#">High-Low</a></li>
+                                <li><a href="#">Low-High</a></li>
+                            </ul>
+                        </div>
+                    </h3>
+                </div>
+                
+                <div class = "row">
+                    <div class = "columnReview">
+                        <img src = "http://pcm.um.edu.my/wp-content/uploads/2017/11/empty-avatar-700x480.png" height = "40%" width = "40%" style = "float: right">
+                    </div>
+                    
+                    <div class = "columnReview" style = "width: 15%">
+                        <h6 style = "margin-left: 10px">
+                            <b>Eliza R.</b>
+                            <br><br>
+                            Madrid, Spain
+                            <br>
+                            <b>24</b> Friends
+                            <br>
+                            <b>12</b> Reviews
+                            <br>
+                        </h6>
+                    </div>
+                    
+                    <div class = "columnReview">
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        
+                        <h5 class = "rate"><b>5/5</b> <span style = "float: right; margin-right: 30px">5/12/2018</span></h5> 
+                        <p>What a magical experience! My husband and I had a delightful night at this truly classic Parisian venue. The Moulin Rouge is not to be missed!</p>
+                    </div>
+                </div>
+                
+                <input type = "submit" name = "load" id = "load" value = "Load More" class = "button" style = "margin-top: 10px;">
+                
+             </div> 
+                            
+        </div>
+        
+    </body>
+    </html>
