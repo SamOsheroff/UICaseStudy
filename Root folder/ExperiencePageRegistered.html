@@ -30,11 +30,53 @@
                     $(this).parent().remove();
                 });
             
+            var $star_rating = $('.star-rating .fa');
+
+        var SetRatingStar = function() {
+            return $star_rating.each(function() {
+            if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+                return $(this).removeClass('fa-star-o').addClass('fa-star');
+            } else {
+            return $(this).removeClass('fa-star').addClass('fa-star-o');
+            }
+            });
+        };
+
+        $star_rating.on('click', function() {
+            $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+            return SetRatingStar();
+        });
+
+        SetRatingStar();
+        
+            
             
         });
         
     </script>
     
+    <!--<script>
+        var $star_rating = $('.star-rating .fa');
+
+        var SetRatingStar = function() {
+            return $star_rating.each(function() {
+            if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+                return $(this).removeClass('fa-star-o').addClass('fa-star');
+            } else {
+            return $(this).removeClass('fa-star').addClass('fa-star-o');
+            }
+            });
+        };
+
+        $star_rating.on('click', function() {
+            $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+            return SetRatingStar();
+        });
+
+        SetRatingStar();
+        
+    </script>
+    -->
     <script>
          function newprefbox() {
     var prefboxesfilled = true;
@@ -77,17 +119,13 @@ function makeaprefbox(){
                   <li><a href="#" class = "navOptions">Dashboard</a></li>
                   <li><a href="#" class = "navOptions">Help</a></li>
                 </ul>
-                 <ul class="nav navbar-nav navbar-right">
-                      <li ><a href="#" class = "headerIcons"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                      <li ><a href="#" class = "headerIcons"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
             </div>
         </nav>
         
         
         <div class = "container-fluid" id = "ExperienceResults">
             <br>
-            <input class = "searchExp" type = "text" name = "search" placeholder="Search Hotels, Experiences or Places ..." id = "res">
+            <input class = "topSearch" type = "text" name = "search" placeholder="Search Hotels, Experiences or Places ..." id = "res">
             <input type = "submit" name = "submit" id = "submit" value = "Submit" class = "button" >
             <br>
             
@@ -101,9 +139,12 @@ function makeaprefbox(){
                 </h3>
                     </div>
                 
+                
+                
                 <div class = "row">
                     <div class="text-center" style = "float:left">
                         <div class="col-xs">
+                            <h4>The Moulin Rouge Cabaret Show</h4>
                             <figure>
                                 <img class = "searchResult" src = "https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/5022/SITours/moulin-rouge-show-paris-in-paris-116546.jpg" alt = "" style = "margin-right: 20px">
                                 <figcaption>
@@ -138,7 +179,12 @@ function makeaprefbox(){
                             </div>
             
                             <div class="prefbox well">
-                                Travel
+                                Cool
+                                <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+                            
+                            <div class="prefbox well">
+                                Show
                                 <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
                             </div>
                         </div>
@@ -147,7 +193,8 @@ function makeaprefbox(){
                             </span>
                 
                         <div class = "icons">
-                            <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-star-empty gi-registered"></span><br>Rate</button>
+                            
+                            <button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#modalLoginForm"><span class = "glyphicon glyphicon-star-empty gi-registered"></span><br>Rate</button>
                     
                             <button type="button" class="btn btn-default btn-lg text-center"><span class = "glyphicon glyphicon-plus gi-registered"></span><br>Add to List</button>
                     
@@ -205,6 +252,73 @@ function makeaprefbox(){
                 <input type = "submit" name = "load" id = "load" value = "Load More" class = "button" style = "margin-top: 10px;">
                 
              </div> 
+            
+<!-- BEGIN MODAL THING           -->
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                                
+                            </button>
+                            
+                            <h4 class="modal-title w-100 font-weight-bold"><b>Add a Review</h4>
+                            <h4 class="modal-title w-70">The Moulin Rouge Cabaret Show</h4>
+                        </div>
+                        
+                <div class="modal-body mx-3">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <div class="star-rating" style= "text-align:center">
+                                  <font size = "3" >Rating: </font>
+                                  <span class="fa fa-star-o" data-rating="1"></span>
+                                  <span class="fa fa-star-o" data-rating="2"></span>
+                                  <span class="fa fa-star-o" data-rating="3"></span>
+                                    <span class="fa fa-star-o" data-rating="4"></span>
+                                    <span class="fa fa-star-o" data-rating="5"></span>
+                                  <input type="hidden" name="whatever3" class="rating-value" value="0">
+                              </div>
+                              <br>
+                        </div>
+                         
+                        <div class = "row">
+                            <div class = "columnMod">
+                                <form class = "formMod" style = "float: right; margin-right: 10px">
+                                    <label>Date: </label>
+                                    <input type="date" name="date"><br>
+                                </form>
+                            </div>
+                            
+                            <div class = "columnMod">
+                                <form class = "formMod">
+                                    <label>Type of Visit: </label>
+                                    <input type="text" name="type"><br>
+                                </form>
+                            </div>
+                          </div>
+                          
+                          <br>
+                          <form>
+                            <div class="form-group">
+                                <label for="comment">Review:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                </div>
+                        
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-default" class="close" data-dismiss="modal" aria-label="Close">Submit</button>
+                </div>
+                        
+            </div>
+        </div>
+    </div>
                             
         </div>
         
