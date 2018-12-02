@@ -13,6 +13,9 @@
         <!-- <link rel = "stylesheet" href = "Exercise1.css"> -->
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <link rel = "stylesheet" href = "../Style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
     </head>
     <body id = "bodyLogin">
          <nav class = "nav navbar">
@@ -41,7 +44,7 @@
                 <div class="col-sm-4 text-center" id= "columnLogIn" >
                     <h1> Login </h1>
                     <br>
-                    <form class = "form-horizontal">
+                    <form class = "form-horizontal" id = "logInForm">
                         <div class = "form-group">
                             <label class = "col-sm-2" for ="username" id = "UsernameLabel">Username:</label>
                             <div class = "col-sm-10">
@@ -94,40 +97,53 @@
             document.cookie = name + "=" + escape(value) + "; path =/; expires=" + expiry.toGMTString();
         }
         
-        function getCookie(cname){
-            var name = cnmae + "=";
+        function getCookie(cname) {
+            var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
             var ca = decodedCookie.split(';');
-            for (var i =0; i<ca.length; i++){
+            for(var i = 0; i <ca.length; i++) {
                 var c = ca[i];
-                while (c.charAt(0) == ' '){
-                    c = c.substring(1); 
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
                 }
-                if (c.indexOf(name)== 0){
-                    return c.substring(name.length, c.length); 
-                    
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
                 }
-                }
-            return "";
             }
+            return "";
+        }
         function logInForm(){
-            var logForm = document.getElementsByClassName("form-horizontal");
+            var logForm = document.getElementById("logInForm");
             var cookie = getCookie(logForm.username.value);
-            var cookieDecoded = JSON.parse(cookie);
-            if (cookie =="" || cookie == null){
+//            var cookieDecoded = JSON.parse(cookie);
+            if (cookie =="" || cookie == null || cookie == undefined){
                 alert("Specified username is not registered")
             }
-            else if (cookieDecoded.password==logForm.password.value){
-//                     Need to populate personal information form
-                
-            }
             else{
-                alert("Incorrect username/password combination")
+                var cookieDecoded = JSON.parse(cookie);
             }
+            if(cookieDecoded.username == "" || cookieDecoded.username == null){
+                alert("Specified username is not registered");
+            }
+            else if (cookieDecoded.password == logForm.pwd.value){ 
+                location.href= "Dashboard.html";
+            }   
+            else{
+                alert("Incorrect username and password combination");
             }
             
             
+//            else if(cookieDecoded.password==logForm.pwd.value){
+////                     Need to populate personal information form
+//                alert("aa");
+//            }
+//            else{
+//                alert("Incorrect username/password combination")
+//            }
         }
+            
+            
+    
     
     
     
