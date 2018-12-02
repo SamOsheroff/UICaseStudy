@@ -417,6 +417,10 @@ body{
 #logInSpacer{
     min-height: 800px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21de5a9e65741ef667d8a56bbb35b951e7d9c748
 
 #username{
     font-size: 20px;
@@ -498,9 +502,10 @@ body{
 }
 
 /*End of Paloma's CSS*/
+   
     
 /*Start of Tamasha's CSS*/
-    .searchExp{
+ .searchExp{
     padding: 6px;
     margin: auto;
     display: flex;
@@ -611,8 +616,6 @@ body{
     float: left;
     width: 33.33%;
 }
-
-
 
 #description{
     float: left;
