@@ -242,6 +242,7 @@ h3{
 
 /* ----------------- end Sam CSS --------*/
 
+
 #checkInCheckOut{
     width: 50%;
     margin: 0 auto;
@@ -639,11 +640,10 @@ body{
     border-bottom: none;
     margin-top: 10px;
 }
-
-.dropdown{
+/*.dropdown{
     display: inline;
     float: right;
-}
+}*/
 
 .columnReview {
     float: left;
