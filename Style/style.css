@@ -133,6 +133,9 @@ h3{
 .well{
     background-color:white
 }
+.margin_1{
+    margin:0 55px 0 55px
+}
 .pad_left{
     padding:0 0 0 15px
 }
@@ -140,13 +143,21 @@ h3{
     padding:0 25px 0 10px
 }
 .pad_3{
-    padding:0 25px 0 35px
+    padding:0 25px 0 35px;
+
 }
 .pad_4{
     padding:0 25px 0 25px
 }
 .pad_5{
     padding: 0 0 15px 0
+}
+.pad_6{
+    padding:0 25px 25px 25px
+}
+.pad_7{
+    padding:0 25px 15px 35px;
+
 }
 .pad_top{
     padding-top:5px
@@ -239,7 +250,10 @@ h3{
     float:right;
     padding:2px 0 0 0;
 }
-
+.icons2{
+    float:right;
+    margin-top:25px;
+}
 /* ----------------- end Sam CSS --------*/
 
 
@@ -617,6 +631,7 @@ body{
     float: left;
     margin-top: 60px;
 }
+
 
 
 .ratings{
