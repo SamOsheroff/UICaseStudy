@@ -142,6 +142,12 @@ h3{
 .pad_3{
     padding:0 25px 0 35px
 }
+.pad_4{
+    padding:0 25px 0 25px
+}
+.pad_5{
+    padding: 0 0 15px 0
+}
 .pad_top{
     padding-top:5px
 }
@@ -179,13 +185,6 @@ h3{
     margin:0;
     padding:15px 0 15px 0;
 }
-.container-fluid:before{
-    content:none;
-}
-
-.container-fluid:after{
-     content:none;
-}
     
 
 .prefbox{
@@ -215,7 +214,34 @@ h3{
     text-align:center;
     border-style:none
 }
+
+.modal-header{
+      background-color: #82A18F;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+.modal-title{
+    font-size:25px
+}
+.modal-body{
+    text-align:center;
+}
+.modal-footer{
+    text-align:left;
+}
+.glyphicon-plus:hover{
+    opacity:.7
+}
+.smallglyph{
+    font-size:16px;
+    vertical-align: center;
+    float:right;
+    padding:2px 0 0 0;
+}
+
 /* ----------------- end Sam CSS --------*/
+
 
 #checkInCheckOut{
     width: 50%;
@@ -417,10 +443,6 @@ body{
 #logInSpacer{
     min-height: 800px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 21de5a9e65741ef667d8a56bbb35b951e7d9c748
 
 #username{
     font-size: 20px;
@@ -611,6 +633,7 @@ body{
     border-bottom: none;
     margin-top: 10px;
 }
+
 
 #dropRev{
     display: inline;
