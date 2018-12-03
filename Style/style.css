@@ -612,7 +612,7 @@ body{
     margin-top: 10px;
 }
 
-.dropdown{
+#dropRev{
     display: inline;
     float: right;
 }
