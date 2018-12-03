@@ -255,6 +255,128 @@ function makeaprefbox(){
                 
              </div> 
             
+             <div class = "container-fluid" id = "ExperienceMain">
+                <br>
+                
+                <div class = "page-header">
+                <h3 class = "searchHeader" style = "color: black"> The Luxembourg Gardens
+                        <input type = "button" name = "book" id = "book" value = "Book" class = "button">  
+                        <div style = "float:right; margin-right: 20px; color: #82a18f"><b>$20</b><br><font size = "-1.2">per person</font></div>
+
+                </h3>
+                    </div>
+                
+                <div class = "row">
+                    <div class="text-center" style = "float:left">
+                        <div class="col-xs">
+        
+                            <figure>
+                                <img class = "searchResult" src = "https://travel.usnews.com/static-travel/images/destinations/86/gettyimages-641492728.jpg" alt = "" style = "margin-right: 20px">
+                                <figcaption>
+                                    <div class = "ratings">
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                    
+                                        <h4 class = "rate"><b>5/5</b></h4>
+                                        <h5 style = "text-align: center"> 1,000 reviews </h5>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>   
+                    
+                    </div>
+
+                
+                    <div class = "middleResults">
+                    
+                        <p>Built by a beauty-loving Queen during the height of the European Renaissance, the Jardin du Luxembourg still retains a decidedly royal and grandiose feel and is one the loveliest places in Paris to visit. Locals and tourists alike stream in during the spring and summer months, but the gardens can be picturesque at any time of year. These formal gardens, open to only royalty before the French Revolution, now serve as one of Paris's most popular destinations for relaxation.</p>
+                
+                        <h4>Tags:</h4> 
+                
+                        <div id="tagsdiv">
+                     
+                            <div class="prefbox well">
+                                France
+                            <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+            
+                           <div class="prefbox well">
+                                Cool
+                                <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+                            
+                            <div class="prefbox well">
+                                Outdoor Activity
+                                <span class="glyphicon glyphicon-remove" onclick="deleteprefbox(event)"></span>
+                            </div>
+                        </div>
+                
+                        <div class = "icons">
+                            
+                            <button type="button" class="btn btn-default btn-lg text-center" data-toggle="modal" data-target="#modalLoginForm" style = "border:none"><span class = "glyphicon glyphicon-star-empty gi-registered"></span><br>Rate</button>
+                    
+                            <button type="button" class="btn btn-default btn-lg text-center" style = "border:none"><span class = "glyphicon glyphicon-plus gi-registered"></span><br>Add to List</button>
+                    
+                            <button type="button" class="btn btn-default btn-lg text-center" style = "border:none"><span class = "glyphicon glyphicon-share-alt gi-registered"></span><br>Share</button>
+                        </div>
+                    </div>
+                    
+                    </div>
+                
+                <hr>
+                <div class = "page-header">
+                    <h3 style = "color: black">Reviews
+                        <div class="dropdown" id = "dropRev">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter By
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Newest</a></li>
+                                <li><a href="#">High-Low</a></li>
+                                <li><a href="#">Low-High</a></li>
+                            </ul>
+                        </div>
+                    </h3>
+                </div>
+                
+                <div class = "row">
+                    <div class = "columnReview">
+                        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxt8kotFJP-fEd2JkSw0wDJBDjR2O3AhZUGKXH_-8rjFNx8fIHlA" height = "40%" width = "40%" style = "float: right">
+                    </div>
+                    
+                    <div class = "columnReview" style = "width: 15%">
+                        <h6 style = "margin-left: 10px">
+                            <b>Jordan R.</b>
+                            <br><br>
+                            Madrid, Spain
+                            <br>
+                            <b>10</b> Friends
+                            <br>
+                            <b>14</b> Reviews
+                            <br>
+                        </h6>
+                    </div>
+                    
+                    <div class = "columnReview">
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        <span class = "glyphicon glyphicon-star gi-rating"></span>
+                        
+                        <h5 class = "rate"><b>5/5</b> <span style = "float: right; margin-right: 30px">2/12/2018</span></h5> 
+                        <p>Just even can't imagine this place in the summer! A must to see when in Paris! I wish we had more time to explore. Like our guide said their is more to Paris than just Mona Lisa!</p>
+                    </div>
+                </div>
+                
+                <input type = "submit" name = "load" id = "load" value = "Load More" class = "button" style = "margin-top: 10px;">
+                
+                
+                
+             </div> 
+            
 <!-- BEGIN MODAL THING           -->
             <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 
