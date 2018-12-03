@@ -443,13 +443,6 @@ body{
 #logInSpacer{
     min-height: 800px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 21de5a9e65741ef667d8a56bbb35b951e7d9c748
->>>>>>> 637ac735726b37b9c4619debbf50b8fb1f4dbb40
 
 #username{
     font-size: 20px;
@@ -640,10 +633,12 @@ body{
     border-bottom: none;
     margin-top: 10px;
 }
-/*.dropdown{
+
+
+#dropRev{
     display: inline;
     float: right;
-}*/
+}
 
 .columnReview {
     float: left;
