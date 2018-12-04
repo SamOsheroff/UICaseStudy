@@ -133,6 +133,9 @@ h3{
 .well{
     background-color:white
 }
+.margin_1{
+    margin:0 55px 0 55px
+}
 .pad_left{
     padding:0 0 0 15px
 }
@@ -140,7 +143,21 @@ h3{
     padding:0 25px 0 10px
 }
 .pad_3{
-    padding:0 25px 0 35px
+    padding:0 25px 0 35px;
+
+}
+.pad_4{
+    padding:0 25px 0 25px
+}
+.pad_5{
+    padding: 0 0 15px 0
+}
+.pad_6{
+    padding:0 25px 25px 25px
+}
+.pad_7{
+    padding:0 25px 15px 35px;
+
 }
 .pad_top{
     padding-top:5px
@@ -208,7 +225,37 @@ h3{
     text-align:center;
     border-style:none
 }
+
+.modal-header{
+      background-color: #82A18F;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+.modal-title{
+    font-size:25px
+}
+.modal-body{
+    text-align:center;
+}
+.modal-footer{
+    text-align:left;
+}
+.glyphicon-plus:hover{
+    opacity:.7
+}
+.smallglyph{
+    font-size:16px;
+    vertical-align: center;
+    float:right;
+    padding:2px 0 0 0;
+}
+.icons2{
+    float:right;
+    margin-top:25px;
+}
 /* ----------------- end Sam CSS --------*/
+
 
 #checkInCheckOut{
     width: 50%;
@@ -418,7 +465,7 @@ body{
 
 #logInSpacer{
     min-height: 800px;
-
+}
 
 #username{
     font-size: 20px;
@@ -500,4 +547,170 @@ body{
 }
 
 /*End of Paloma's CSS*/
+   
+    
+/*Start of Tamasha's CSS*/
+ .topSearch{
+    padding: 6px;
+    margin: auto;
+    display: flex;
+    width: 50%;
+}
 
+.container-fluid input[type = submit]{
+    padding: 6px;
+    margin: auto;
+    display: block;
+    width: 45%;
+    background-color: #82a18f;
+    color: white;
+}
+
+.container-fluid input[type = button]{
+    padding: 6px;
+    width: 100px;
+    background-color: #428bca;
+    color: white;
+    border-radius: 20%;
+    font-size: 14px;
+    float: right;
+}
+
+
+.searchResult{
+    height:225px;
+    width: 325px;
+    float: left;
+}
+
+ div.prefbox{
+        background-color: white;
+        float:left;
+        border: 2px solid black;
+        padding: 7px 5px 7px 5px;
+        margin: 5px 5px 5px 5px;
+        border-radius:5px
+}
+
+.prefbox{
+        background-color: white;
+        float:left;
+        width:auto;
+        display:flex;
+        border: 2px solid black;
+        padding: 7px 5px 7px 5px;
+        margin: 5px 5px 5px 5px;
+        border-radius:5px
+}
+
+.glyphicon-remove{
+    padding: 1px 0 0 2px
+}
+
+.newpref{
+    min-width:50px;
+    max-width:100px;
+    text-align:center;
+    height:20px;
+    transition: width 0.25s;
+    text-align:center;
+    border-style:none
+}
+
+.gi-unregistered{
+    font-size: 50px;
+    margin: 18px;
+    color: gray;
+}
+
+.gi-registered{
+    font-size: 50px;
+    margin: 18px;
+}
+
+.gi-registered:hover{
+    color: yellow;
+}
+
+.gi-rating{
+    color: yellow;
+}
+
+.icons{
+    float: left;
+    margin-top: 60px;
+}
+
+
+
+.ratings{
+    float: left;
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+.rate{
+    display: inline;
+}
+
+.page-header{
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+
+#dropRev{
+    display: inline;
+    float: right;
+}
+
+.columnReview {
+    float: left;
+    width: 33.33%;
+}
+
+.columnMod{
+    float:left;
+    width: 50%;
+}
+
+.form-group{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.label{
+    display: inline-block;
+}
+
+
+#description{
+    float: left;
+}
+
+#SearchHeading{
+    text-align: center;
+}
+
+#body{
+    background-color: #fff7e5;
+}
+
+#res{
+    float: left;
+}
+
+#ExperienceMain{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 30px 30px 30px;
+    border: 2px solid black;
+}
+
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: yellow;}
