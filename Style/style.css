@@ -196,7 +196,7 @@ h3{
     margin:0;
     padding:15px 0 15px 0;
 }
-    
+
 
 .prefbox{
         background-color: white;
@@ -326,13 +326,21 @@ h3{
 .carouselImage{
     margin: 0 auto;
 }
+#aboutUsMainContainer{
+    background-color: #FFF7E5;
+}
 #aboutUsContainer{
     text-align: center;
+    background-color: #FFF7E5;
+
 }
 #termsAndConditionsMainContainer{
+    background-color: #FFF7E5;
 }
 #termsAndCondtionsContainer{
     text-align:center;
+    background-color: #FFF7E5;
+
 }
 
 #aboutUsHeader{
@@ -363,7 +371,8 @@ h3{
     text-shadow: 2px 2px 4px black;
 }
 body{
-    background-color: #FFF7E5; 
+    background-color: #FFF7E5;
+
 }
 
 /*Andrew CSS End*/
