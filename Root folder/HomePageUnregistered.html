@@ -32,9 +32,8 @@
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                  <li><a href="#" class = "navOptions">Travel Search</a></li>
-                  <li><a href="LogIn.html" class = "navOptions">Dashboard</a></li>
-                  <li><a href="#" class = "navOptions">Help</a></li>
+                  <li><a href="ExperiencePageUnregistered.html" class = "navOptions">Travel Search</a></li>
+                  <li><a href="HelpUnregistered.html" class = "navOptions">Help</a></li>
                 </ul>
                  <ul class="nav navbar-nav navbar-right">
                       <li ><a href="RegistrationPage.html" class = "headerIcons"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -50,7 +49,7 @@
                         <input type = "search" class = "form-control" id = "homeSearch" placeHolder = "Location, Hotel, Keyword...">
                         <div class="input-group-btn" >
                             <button class="btn btn-default" type="submit" id = "homeSearchSubmitButton">
-                            <i class="glyphicon glyphicon-search"></i>
+                            <i onclick = "newDoc()" class="glyphicon glyphicon-search"></i>
                             </button>
                         </div>
                     </div>  
@@ -69,7 +68,8 @@
                         <label for = "guests" class = "homeInputLabels">Guests:</label>
                         <input type = "number" min = "1" class = "form-control" placeholder="1" id = "guestsHomeInput">
                     </div><br>
-                    <button type="submit" class="btn btn-default" id = "homeSubmitButton">Let's Go!</button>
+                    
+                    <button type="submit" class="btn btn-default" id = "homeSubmitButton"><a href = "ExperiencePageUnregistered.html" id = "searchLink">Let's Go!</a></button>
 
                 </form>
             </div>
@@ -82,7 +82,7 @@
                         <ul id = "footerList">
                             <li class = "footerListItem"><a href = "AboutUsUnregistered.html" class = "footerListItems">About Us</a></li>
                             <li class = "footerListItem"><a href = "TermsConditionsUnregistered.html" class = "footerListItems">Terms and Conditions</a></li>
-                            <li class = "footerListItem"><a href = "#" class = "footerListItems">Contact</a></li>
+                            <li class = "footerListItem"><a href = "ContactUsUnregistered.html" class = "footerListItems">Contact</a></li>
         
                         </ul>
                 </div>
@@ -96,6 +96,9 @@
         var dd = today.getDate();
         var mm = today.getMonth()+1; //January is 0!
         var yyyy = today.getFullYear();
+        function newDoc() {
+            window.location.assign("https://www.google.com/");
+        }
     </script>
     <script>
         function autocomplete(inp, arr) {

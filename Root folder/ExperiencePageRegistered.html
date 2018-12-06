@@ -110,18 +110,18 @@ function makeaprefbox(){
             <div class = "container-fluid" id = "header">
                 <div class = "navbar-header">
                     <div id = "headerLogo">
-                        <a href = "HomePageUnregistered.html" class = "navbar-brand">BeeHive</a>
+                        <a href = "HomePageRegistered.html" class = "navbar-brand" id ="beeHiveLogoText">BeeHive</a>
                         <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                  <li><a href="#" class = "navOptions">Travel Search</a></li>
-                  <li><a href="#" class = "navOptions">Dashboard</a></li>
-                  <li><a href="#" class = "navOptions">Help</a></li>
+                  <li><a href="ExperiencePageRegistered.html" class = "navOptions">Travel Search</a></li>
+                  <li><a href="Dashboard.html" class = "navOptions">Dashboard</a></li>
+                  <li><a href="HelpRegistered.html" class = "navOptions">Help</a></li>
                 </ul>
-                
-                <ul class="nav navbar-nav navbar-right">
-                      <li ><a href="#" class = "headerIcons"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+                 <ul class="nav navbar-nav navbar-right">
+                      <li ><a href="ExperiencePageUnregistered.html" class = "headerIcons"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>
             </div>
         </nav>
@@ -442,7 +442,7 @@ function makeaprefbox(){
                           
                           <br>
                           <form>
-                            <div class="form-group">
+                            <div class="form-group" id = "reviewForm">
                                 <label for="comment">Review:</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                             </div>
@@ -461,6 +461,18 @@ function makeaprefbox(){
     </div>
                             
         </div>
-        
+        <div class = "container-fluid" id = "footer">
+            <div class = "row">
+                <div class = "col-sm-4"></div>
+                <div class = "col-sm-4" id = "footerColumn">
+                        <ul id = "footerList">
+                            <li class = "footerListItem"><a href = "AboutUsRegistered.html" class = "footerListItems">About Us</a></li>
+                            <li class = "footerListItem"><a href = "TermsConditionsRegistered.html" class = "footerListItems">Terms and Conditions</a></li>
+                            <li class = "footerListItem"><a href = "ContactUsRegistered.html" class = "footerListItems">Contact</a></li> 
+                        </ul>
+                </div>
+                <div class = "col-sm-4"></div>
+            </div>
+        </div>
     </body>
     </html>
