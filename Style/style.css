@@ -54,9 +54,12 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
-    margin:x 0;
+    margin: 0;
     padding: 0;
     min-height: 1000px;
+}
+#searchLink{
+    color: white;
 }
 #homeMain{
     margin: 0;
@@ -80,7 +83,7 @@
   border-bottom: none;
   border-top: none;
   z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
+/*  position the autocomplete items to be the same width as the container:*/
   top: 100%;
   left: 0;
   right: 0;
@@ -196,7 +199,7 @@ h3{
     margin:0;
     padding:15px 0 15px 0;
 }
-    
+
 
 .prefbox{
         background-color: white;
@@ -326,13 +329,21 @@ h3{
 .carouselImage{
     margin: 0 auto;
 }
+#aboutUsMainContainer{
+    background-color: #FFF7E5;
+}
 #aboutUsContainer{
     text-align: center;
+    background-color: #FFF7E5;
+
 }
 #termsAndConditionsMainContainer{
+    background-color: #FFF7E5;
 }
 #termsAndCondtionsContainer{
     text-align:center;
+    background-color: #FFF7E5;
+
 }
 
 #aboutUsHeader{
@@ -363,16 +374,69 @@ h3{
     text-shadow: 2px 2px 4px black;
 }
 body{
-    background-color: #FFF7E5; 
-}
+    background-color: #FFF7E5;
 
+}
+#mainContainerHelp{
+    text-align: center;
+    margin: 0px 0 120px 0;
+    min-height: 730px;
+    
+}
+#helpHeader{
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border: 2px black solid;
+    display: inline-block;
+    background-color: #82A18F;
+    border-radius: 10px;
+}
+#contactHeader{
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border: 2px black solid;
+    display: inline-block;
+    background-color: #82A18F;
+    border-radius: 10px;
+}
+#mainContainerContact{
+    text-align:center;
+    background-image: url(../Images/building-high-rise-hotel-9376.jpg);
+    min-height: 1000px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#contactUsContainer{
+/*    background-color: #FFF7E5;*/
+    margin: 100px 0;
+    border-radius: 15px;
+    box-shadow:2px 2px 4px black;
+    padding: 100px;
+}
+.contactSubHeader{
+    color: white;
+        text-shadow: 2px 2px 4px black;
+
+}
 /*Andrew CSS End*/
 
 
 
 
 /*Paloma's CSS Code*/
-
+#mainContainerForgotPass{
+    min-height: 850px;
+}
+#mainContainerForgotUser{
+   min-height: 850px; 
+}
 #registrationPageBody{
     background-color: #FFF7e5
 }
@@ -388,7 +452,7 @@ body{
 }
 
 #registrationSpacer{
-    min-height: 800px;
+    min-height: 850px;
 }
 
 
@@ -455,7 +519,7 @@ body{
 }
 
 #logInSpacer{
-    min-height: 800px;
+    min-height: 850px;
 }
 
 #username{
@@ -650,7 +714,7 @@ body{
 }
 
 
-#dropRev{
+#dropRev, #dropRev2{
     display: inline;
     float: right;
 }
@@ -665,7 +729,7 @@ body{
     width: 50%;
 }
 
-.form-group{
+#reviewForm{
     width: 80%;
     display: block;
     margin: auto;
@@ -675,6 +739,9 @@ body{
     display: inline-block;
 }
 
+#perPerson, #perPerson2{
+    font-size: 10px;
+}
 
 #description{
     float: left;
@@ -688,6 +755,7 @@ body{
     background-color: #fff7e5;
 }
 
+
 #res{
     float: left;
 }
@@ -696,6 +764,13 @@ body{
     background-color: white;
     border-radius: 10px;
     padding: 0 30px 30px 30px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+#rating{
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .star-rating {

@@ -28,17 +28,16 @@
                 <div class = "navbar-header">
                     <div id = "headerLogo">
                         <a href = "HomePageUnregistered.html" class = "navbar-brand" id ="beeHiveLogoText">BeeHive</a>
-                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
+                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" alt = "logo" id = "beeHiveLogo">
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                  <li><a href="#" class = "navOptions">Travel Search</a></li>
-                  <li><a href="#" class = "navOptions">Dashboard</a></li>
-                  <li><a href="#" class = "navOptions">Help</a></li>
+                  <li><a href="ExperiencePageUnregistered.html" class = "navOptions">Travel Search</a></li>
+                  <li><a href="HelpUnregistered.html" class = "navOptions">Help</a></li>
                 </ul>
                  <ul class="nav navbar-nav navbar-right">
-                      <li ><a href="Root%2520folder/RegistrationPage.html" class = "headerIcons"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                      <li ><a href="Root%2520folder/LogIn.html" class = "headerIcons"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      <li ><a href="RegistrationPage.html" class = "headerIcons"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li ><a href="LogIn.html" class = "headerIcons"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
             </div>
         </nav>
@@ -50,7 +49,7 @@
                         <input type = "search" class = "form-control" id = "homeSearch" placeHolder = "Location, Hotel, Keyword...">
                         <div class="input-group-btn" >
                             <button class="btn btn-default" type="submit" id = "homeSearchSubmitButton">
-                            <i class="glyphicon glyphicon-search"></i>
+                            <i onclick = "newDoc()" class="glyphicon glyphicon-search"></i>
                             </button>
                         </div>
                     </div>  
@@ -58,18 +57,19 @@
 
                 <form class = "form-inline" id = "checkInCheckOut">
                     <div class = "form-group">
-                        <label for = "checkIn" class = "homeInputLabels">Check In: </label>
-                        <input type = "date" class = "form-control" placeholder= today id = "checkInInput">
+                        <label for = "checkInInput" class = "homeInputLabels">Check In: </label>
+                        <input type = "date" class = "form-control" id = "checkInInput">
                     </div>
                     <div class = "form-group">
-                        <label for = "checkOut" class = "homeInputLabels">Check Out: </label>
+                        <label for = "checkOutInput" class = "homeInputLabels">Check Out: </label>
                         <input type = "date" class = "form-control" id = "checkOutInput">
                     </div>
                     <div class = "form-group">
-                        <label for = "guests" class = "homeInputLabels">Guests:</label>
+                        <label for = "guestsHomeInput" class = "homeInputLabels">Guests:</label>
                         <input type = "number" min = "1" class = "form-control" placeholder="1" id = "guestsHomeInput">
                     </div><br>
-                    <button type="submit" class="btn btn-default" id = "homeSubmitButton">Let's Go!</button>
+                    
+                    <button type="submit" class="btn btn-default" id = "homeSubmitButton"><a href = "ExperiencePageUnregistered.html" id = "searchLink">Let's Go!</a></button>
 
                 </form>
             </div>
@@ -80,9 +80,9 @@
                 <div class = "col-sm-4"></div>
                 <div class = "col-sm-4" id = "footerColumn">
                         <ul id = "footerList">
-                            <li class = "footerListItem"><a href = "/AboutUsUnregistered.html" class = "footerListItems">About Us</a></li>
-                            <li class = "footerListItem"><a href = "Root%2520folder/TermsConditionsUnregistered.html" class = "footerListItems">Terms and Conditions</a></li>
-                            <li class = "footerListItem"><a href = "#" class = "footerListItems">Contact</a></li>
+                            <li class = "footerListItem"><a href = "AboutUsUnregistered.html" class = "footerListItems">About Us</a></li>
+                            <li class = "footerListItem"><a href = "TermsConditionsUnregistered.html" class = "footerListItems">Terms and Conditions</a></li>
+                            <li class = "footerListItem"><a href = "ContactUsUnregistered.html" class = "footerListItems">Contact</a></li>
         
                         </ul>
                 </div>
@@ -91,12 +91,6 @@
         </div>
         
 	</body>
-    <script>
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
-    </script>
     <script>
         function autocomplete(inp, arr) {
           /*the autocomplete function takes two arguments,
