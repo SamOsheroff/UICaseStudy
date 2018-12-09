@@ -1,4 +1,4 @@
->
+<!DOCTYPE html>
 <html lang = "en">
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,13 +58,15 @@ function makeaprefbox(){
         
 
 	</head>
+    <!-- begin webpage html-->
 	<body id="bodydash">
         <nav class = "nav navbar">
+            <!-- begin header including, navigation bar-->
             <div class = "container-fluid" id = "header">
                 <div class = "navbar-header">
                     <div id = "headerLogo">
                         <a href = "Dashboard.html" class = "navbar-brand">BeeHive</a>
-                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
+                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo" alt="BeeHive logo">
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
@@ -78,13 +80,14 @@ function makeaprefbox(){
                     </ul>
             </div>
         </nav>
+        <!-- begin main body section of webpage -->
         <div class = "container-fluid" id = "bodyContainer" >
             <div class="row bodyrow">
                 <div class="well topwell col-sm-12" style="max-width:100%">
                     <div class="media">
                         <div class="media-left">
                             <img src="https://capitalwithstrategy.com/wp-content/uploads/2018/09/Jeff-Hays-Headshot-Cartoon-SQUARE.png"
-                                class="media-object" style="width:100px">
+                                class="media-object" style="width:100px" alt="Profile Photo">
                         </div>
                         <div class="media-body pad_left">
                             <a href="#" class="btn btn-default pull-right signOutButton btn-lg" role="button">Edit Profile</a>
@@ -152,7 +155,7 @@ function makeaprefbox(){
                             <p style="font-size:18px">Collaborators: <a href="#User2">AndyB</a>, <a href="#User3">TamashaP</a></p>
                             <button class="btn btn-default" data-toggle="modal" data-target="#addUserModal">Add Collaborators <span class="glyphicon glyphicon-plus-sign" style="padding:1px 0 0 0"></span> </button>
                         </div>
-            <!--- could add in actual functionality here. if you want --->
+           
                     <!-- Modal -->
 <div id="addUserModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-sm">
@@ -252,7 +255,7 @@ function makeaprefbox(){
                     <div class = "page-header">
                     <br>
                 <h3 class = "searchHeader" style = "color: black"> The Moulin Rouge Cabaret Show 
-                        <input type = "button" name = "book" id = "book" value = "Book" class = "button">  
+                        <input type = "button" name = "book" id = "book1" value = "Book" class = "button">  
                         
 
                 </h3>
@@ -361,7 +364,7 @@ function makeaprefbox(){
                       <div class="row">
                           <div class="col-lg-12">
                               <div class="star-rating" style= "text-align:center">
-                                  <font size = "3" >Rating: </font>
+                                  <p style="font-size:20px" >Rating: </p>
                                   <span class="fa fa-star-o" data-rating="1"></span>
                                   <span class="fa fa-star-o" data-rating="2"></span>
                                   <span class="fa fa-star-o" data-rating="3"></span>
@@ -392,7 +395,7 @@ function makeaprefbox(){
                           <form>
                             <div class="form-group">
                                 <label for="comment">Review:</label>
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <textarea class="form-control" rows="5" id="comment1"></textarea>
                             </div>
                         </form>
                     </div>
@@ -401,7 +404,7 @@ function makeaprefbox(){
                 </div>
                         
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-default" class="close" data-dismiss="modal" aria-label="Close">Submit</button>
+                    <button class="btn btn-default close" data-dismiss="modal" aria-label="Close">Submit</button>
                 </div>
                         
             </div>
@@ -426,7 +429,7 @@ function makeaprefbox(){
                       <div class="row">
                           <div class="col-lg-12">
                               <div class="star-rating" style= "text-align:center">
-                                  <font size = "3" >Rating: </font>
+                                  <p style = "font-size:20px" >Rating: </p>
                                   <span class="fa fa-star-o" data-rating="1"></span>
                                   <span class="fa fa-star-o" data-rating="2"></span>
                                   <span class="fa fa-star-o" data-rating="3"></span>
@@ -466,7 +469,7 @@ function makeaprefbox(){
                 </div>
                         
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-default" class="close" data-dismiss="modal" aria-label="Close">Submit</button>
+                    <button class="btn btn-default close" data-dismiss="modal" aria-label="Close">Submit</button>
                 </div>
                         
             </div>
