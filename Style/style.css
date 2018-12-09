@@ -739,6 +739,9 @@ body{
     display: inline-block;
 }
 
+#perPerson{
+    font-size: 10px;
+}
 
 #description{
     float: left;
@@ -752,6 +755,7 @@ body{
     background-color: #fff7e5;
 }
 
+
 #res{
     float: left;
 }
@@ -762,6 +766,11 @@ body{
     padding: 0 30px 30px 30px;
     border: 2px solid black;
     margin-bottom: 50px;
+}
+
+#rating{
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .star-rating {
