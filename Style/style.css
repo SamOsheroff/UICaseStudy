@@ -714,7 +714,7 @@ body{
 }
 
 
-#dropRev{
+#dropRev, #dropRev2{
     display: inline;
     float: right;
 }
@@ -739,7 +739,7 @@ body{
     display: inline-block;
 }
 
-#perPerson{
+#perPerson, #perPerson2{
     font-size: 10px;
 }
 
