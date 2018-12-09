@@ -729,7 +729,7 @@ body{
     width: 50%;
 }
 
-#reviewForm{
+#reviewForm, #reviewForm1{
     width: 80%;
     display: block;
     margin: auto;
@@ -768,7 +768,7 @@ body{
     margin-bottom: 50px;
 }
 
-#rating{
+#rating, #rating1{
     font-size: 18px;
     font-weight: 700;
 }
