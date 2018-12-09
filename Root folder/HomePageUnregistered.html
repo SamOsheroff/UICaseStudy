@@ -28,7 +28,7 @@
                 <div class = "navbar-header">
                     <div id = "headerLogo">
                         <a href = "HomePageUnregistered.html" class = "navbar-brand" id ="beeHiveLogoText">BeeHive</a>
-                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" id = "beeHiveLogo">
+                        <img src = "../Images/beeHiveLogo.jpeg" class = "navbar-brand" alt = "logo" id = "beeHiveLogo">
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
@@ -57,15 +57,15 @@
 
                 <form class = "form-inline" id = "checkInCheckOut">
                     <div class = "form-group">
-                        <label for = "checkIn" class = "homeInputLabels">Check In: </label>
-                        <input type = "date" class = "form-control" placeholder= today id = "checkInInput">
+                        <label for = "checkInInput" class = "homeInputLabels">Check In: </label>
+                        <input type = "date" class = "form-control" id = "checkInInput">
                     </div>
                     <div class = "form-group">
-                        <label for = "checkOut" class = "homeInputLabels">Check Out: </label>
+                        <label for = "checkOutInput" class = "homeInputLabels">Check Out: </label>
                         <input type = "date" class = "form-control" id = "checkOutInput">
                     </div>
                     <div class = "form-group">
-                        <label for = "guests" class = "homeInputLabels">Guests:</label>
+                        <label for = "guestsHomeInput" class = "homeInputLabels">Guests:</label>
                         <input type = "number" min = "1" class = "form-control" placeholder="1" id = "guestsHomeInput">
                     </div><br>
                     
@@ -91,15 +91,6 @@
         </div>
         
 	</body>
-    <script>
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
-        function newDoc() {
-            window.location.assign("https://www.google.com/");
-        }
-    </script>
     <script>
         function autocomplete(inp, arr) {
           /*the autocomplete function takes two arguments,

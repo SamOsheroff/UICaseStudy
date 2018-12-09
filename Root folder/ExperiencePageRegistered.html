@@ -23,87 +23,7 @@
         <link rel = "stylesheet" href = "../Style/style.css">
     </head>
     
-    <script>
-        $(document).ready(function(){
-            
-             $("span.glyphicon-remove").click(function(){
-                    $(this).parent().remove();
-                });
-            
-            var $star_rating = $('.star-rating .fa');
-
-        var SetRatingStar = function() {
-            return $star_rating.each(function() {
-            if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
-                return $(this).removeClass('fa-star-o').addClass('fa-star');
-            } else {
-            return $(this).removeClass('fa-star').addClass('fa-star-o');
-            }
-            });
-        };
-
-        $star_rating.on('click', function() {
-            $star_rating.siblings('input.rating-value').val($(this).data('rating'));
-            return SetRatingStar();
-        });
-
-        SetRatingStar();
-        
-            
-            
-        });
-        
-    </script>
     
-    <!--<script>
-        var $star_rating = $('.star-rating .fa');
-
-        var SetRatingStar = function() {
-            return $star_rating.each(function() {
-            if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
-                return $(this).removeClass('fa-star-o').addClass('fa-star');
-            } else {
-            return $(this).removeClass('fa-star').addClass('fa-star-o');
-            }
-            });
-        };
-
-        $star_rating.on('click', function() {
-            $star_rating.siblings('input.rating-value').val($(this).data('rating'));
-            return SetRatingStar();
-        });
-
-        SetRatingStar();
-        
-    </script>
-    -->
-    <script>
-         function newprefbox() {
-    var prefboxesfilled = true;
-    var x = document.getElementsByClassName("prefbox");
-    for (i = 0; i < x.length; i++) {
-        if (x[i].firstChild.nodeType==1) {
-            if (x[i].firstChild.value=='') {
-                prefboxesfilled = false
-            }
-        }
-    };    
-    if (prefboxesfilled == true){
-            makeaprefbox()
-    }
-}
-function makeaprefbox(){     
-    var newinputhtml="<input type='text' class='newpref' size='7' required placeholder='New Tag'>";
-    var newxbuttonhtml="<span class='glyphicon glyphicon-remove newbox' onclick='deleteprefbox(event)'></span>";
-    var newdivhtml="<div class='well prefbox' id='new'>" + newinputhtml + newxbuttonhtml + "</div>";
-    $("#tagsdiv").append(newdivhtml)  
-}
- function deleteprefbox(event) {
-     var x=event.target;
-     x.parentElement.remove()
-}
-        
-    </script>
     
     <body id = "body">
          <nav class = "nav navbar">
@@ -460,4 +380,62 @@ function makeaprefbox(){
             </div>
         </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            
+             $("span.glyphicon-remove").click(function(){
+                    $(this).parent().remove();
+                });
+            
+            var $star_rating = $('.star-rating .fa');
+
+        var SetRatingStar = function() {
+            return $star_rating.each(function() {
+            if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+                return $(this).removeClass('fa-star-o').addClass('fa-star');
+            } else {
+            return $(this).removeClass('fa-star').addClass('fa-star-o');
+            }
+            });
+        };
+
+        $star_rating.on('click', function() {
+            $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+            return SetRatingStar();
+        });
+
+        SetRatingStar();
+        
+            
+            
+        });
+        
+    
+
+         function newprefbox() {
+    var prefboxesfilled = true;
+    var x = document.getElementsByClassName("prefbox");
+    for (i = 0; i < x.length; i++) {
+        if (x[i].firstChild.nodeType==1) {
+            if (x[i].firstChild.value=='') {
+                prefboxesfilled = false
+            }
+        }
+    };    
+    if (prefboxesfilled == true){
+            makeaprefbox()
+    }
+}
+function makeaprefbox(){     
+    var newinputhtml="<input type='text' class='newpref' size='7' required placeholder='New Tag'>";
+    var newxbuttonhtml="<span class='glyphicon glyphicon-remove newbox' onclick='deleteprefbox(event)'></span>";
+    var newdivhtml="<div class='well prefbox' id='new'>" + newinputhtml + newxbuttonhtml + "</div>";
+    $("#tagsdiv").append(newdivhtml)  
+}
+ function deleteprefbox(event) {
+     var x=event.target;
+     x.parentElement.remove()
+}
+        
+    </script>
     </html>
